@@ -1,0 +1,33 @@
+<div class="navbar-wagon">
+  <!-- Logo -->
+  <%= link_to root_path, class: "navbar-wagon-brand-logo" do %>
+    <%= image_tag "logo.png" %>
+  <% end %>
+
+  <!-- Right Navigation -->
+  <div class="navbar-wagon-right hidden-xs hidden-sm">
+    <a href="" class="navbar-wagon-item navbar-wagon-link">ACCUEIL</a>
+    <a href="" class="navbar-wagon-item navbar-wagon-link">A PROPOS</a>
+    <a href="" class="navbar-wagon-item navbar-wagon-link">REALISATIONS</a>
+    <a href="" class="navbar-wagon-item navbar-wagon-link">CONTACT</a>
+    <a href="" class="navbar-wagon-item navbar-wagon-link">ACTUALITES</a>
+  </div>
+
+  <div class="contact">
+    <a href="" class="navbar-wagon-item font-contact"><i class="fa fa-clock-o" aria-hidden="true"></i> 08:00 - 17:00</a>
+    <a href="" class="navbar-wagon-item font-contact"><i class="fa fa-phone" aria-hidden="true"></i> 03 44 66 51 02</a>
+  </div>
+
+  <!-- Dropdown appearing on mobile only -->
+  <div class="navbar-wagon-item hidden-md hidden-lg">
+    <div class="dropdown">
+      <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
+      <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
+        <li><a href="#">Accueil</a></li>
+        <li><a href="#">Realisations</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Actualité</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
