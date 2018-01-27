@@ -40,16 +40,18 @@
 
 <div class="services-home">
   <h2>Nos Services</h2>
-  <div class="service">
+  <div class="service Assainissement">
     <%= cl_image_tag 'road-construction-1264789_1920_iicyja', :height=>200 %>
     <div class="description-service">
       <h4>Assainissement</h4>
       <p>Lorem ipsum dolor sit amet, nam aliquip quaeque ne. Sint scribentur interpretaris id pro, molestie accusamus interesset sed ne, vidisse scripta ea eum.</p>
       <%= link_to 'En savoir plus', root_path %>
+      <hr class="separation sep-right" />
     </div>
   </div>
   <div class="service">
-    <div class="description-service">
+    <div class="description-service desc-voirie">
+      <hr class="separation sep-horizontal" />
       <h4>Voirie</h4>
       <p>Lorem ipsum dolor sit amet, nam aliquip quaeque ne. Sint scribentur interpretaris id pro, molestie accusamus interesset sed ne, vidisse scripta ea eum.</p>
       <%= link_to 'En savoir plus', root_path %>
@@ -58,7 +60,8 @@
   </div>
   <div class="service">
     <%= cl_image_tag '33733592133_63b7a2cbef_o_oalkid', :height=>200 %>
-    <div class="description-service">
+    <hr class="separation sep-centrale" />
+    <div class="description-service desc-maconnerie">
       <h4>Maçonnerie</h4>
       <p>Lorem ipsum dolor sit amet, nam aliquip quaeque ne. Sint scribentur interpretaris id pro, molestie accusamus interesset sed ne, vidisse scripta ea eum.</p>
       <%= link_to 'En savoir plus', root_path %>

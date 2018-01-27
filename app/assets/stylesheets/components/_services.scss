@@ -4,8 +4,54 @@
 }
 .service {
   display: flex;
+  justify-content: space-around;
   img {
     margin-right: 20px;
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
   }
+  margin: 30px 0;
+  a {
+    text-decoration: none;
+    color: $orange;
+    font-size: 15px;
+  }
+}
+.separation{
+  clear: both;
+  position: absolute;
+  margin-top :10px;
+  border-radius: 1px;
+  background-color: #DB874E;
+  }
+
+.sep-right {
+  width : 5px;
+  top: 0;
+  right: 0;
+  height: 100px;
+  margin-left: 250px;
+}
+.sep-horizontal {
+  width : 100px;
+  top: 0;
+  left: -46%;
+  height: 5px;
+}
+.sep-centrale {
+  width : 5px;
+  height: 100px;
+}
+
+.description-service {
+  position: relative;
+  width: 316px;
+  p {
+    width: 75%;
+  }
+}
+.desc-voirie {
+  margin-left: 20%;
+}
+.desc-maconnerie {
+  margin-left: 30px;
 }
