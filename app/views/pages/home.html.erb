@@ -1,13 +1,96 @@
-<div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.3) 50%), url(<%= image_path 'luke.jpg' %>);">
+<div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.3) 50%), url(<%= cl_image_path 'luke-besley-260249_wnqa7m' %>)">
   <div class="banner-content">
     <h1>DMVA</h1>
-    <h2>Travaux Publics</h2>
-    <p>Une entreprise qui vous parle - Une entreprise qui vous parle - Une entreprise qui vous parle</p>
-    <a class="btn btn-primary btn-lg">Votre devis</a>
   </div>
 </div>
 <div class="actions">
   <div class="row">
+    <div class="col-xs-12 col-sm-4 action">
+      <div class="icon-position">
+        <%= cl_image_tag 'hand-shake_1_vixpdh', :width=>50 %>
+        <h3>Rencontre avec le client</h3>
+      </div>
+      <div class="text-action">
+        <h1 class="h1-text-action">1</h1>
+        <p>Lorem ipsum dolor sit amet, nam aliquip quaeque ne. Sint scribentur interpretaris id pro, molestie accusamus interesset sed ne, vidisse scripta ea eum.</p>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-4 action">
+      <div class="icon-position">
+        <%= cl_image_tag 'note_wvaruy', :height=>50 %>
+        <h3>Chiffrage du devis</h3>
+      </div>
+      <div class="text-action">
+        <h1 class="h1-text-action">2</h1>
+        <p>Lorem ipsum dolor sit amet, nam aliquip quaeque ne. Sint scribentur interpretaris id pro, molestie accusamus interesset sed ne, vidisse scripta ea eum.</p>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-4 action">
+      <div class="icon-position">
+        <%= cl_image_tag 'helmet_1_ke3eks', :height=>50 %>
+        <h3>Réalisation des travaux</h3>
+      </div>
+      <div class="text-action">
+        <h1 class="h1-text-action">3</h1>
+        <p>Lorem ipsum dolor sit amet, nam aliquip quaeque ne. Sint scribentur interpretaris id pro, molestie accusamus interesset sed ne, vidisse scripta ea eum.</p>
+      </div>
+    </div>
+  </div>
+</div>
 
+<div class="services-home">
+  <h2>Nos Services</h2>
+  <div class="service">
+    <%= cl_image_tag 'road-construction-1264789_1920_iicyja', :height=>200 %>
+    <div class="description-service">
+      <h4>Assainissement</h4>
+      <p>Lorem ipsum dolor sit amet, nam aliquip quaeque ne. Sint scribentur interpretaris id pro, molestie accusamus interesset sed ne, vidisse scripta ea eum.</p>
+      <%= link_to 'En savoir plus', root_path %>
+    </div>
+  </div>
+  <div class="service">
+    <div class="description-service">
+      <h4>Voirie</h4>
+      <p>Lorem ipsum dolor sit amet, nam aliquip quaeque ne. Sint scribentur interpretaris id pro, molestie accusamus interesset sed ne, vidisse scripta ea eum.</p>
+      <%= link_to 'En savoir plus', root_path %>
+    </div>
+    <%= cl_image_tag 'site-1359677_1920_ldiqfq', :height=>200 %>
+  </div>
+  <div class="service">
+    <%= cl_image_tag '33733592133_63b7a2cbef_o_oalkid', :height=>200 %>
+    <div class="description-service">
+      <h4>Maçonnerie</h4>
+      <p>Lorem ipsum dolor sit amet, nam aliquip quaeque ne. Sint scribentur interpretaris id pro, molestie accusamus interesset sed ne, vidisse scripta ea eum.</p>
+      <%= link_to 'En savoir plus', root_path %>
+    </div>
+  </div>
+  <%= link_to 'Voir nos réalisations', root_path %>
+</div>
+
+<div class="projets-home">
+  <h2>Derniers projet</h2>
+  <div class="categroy">
+    <%= link_to 'Tout afficher', root_path %>
+    <%= link_to 'Démolition', root_path %>
+    <%= link_to 'Maçonnerie', root_path %>
+    <%= link_to 'Voirie', root_path %>
+    <%= link_to 'Assainissement', root_path %>
+  </div>
+  <div class="projet">
+
+  </div>
+  <div class="accomplit">
+    <h2>Ce que nous avons accomplit</h2>
+    <div class="bloc-accompli">
+      <div class="desc-bloc-accompli">
+        <p>Lorem ipsum dolor sit amet, nam aliquip quaeque ne. Sint scribentur interpretaris id pro, molestie accusamus interesset sed ne, vidisse scripta ea eum.</p>
+      </div>
+      <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url(<%= cl_image_path 'workers-535533_1920_conxuq' %>);">
+        <div class="card-description">
+          <h3>15</h3>
+          <h5>Années d'expérience dans le secteur</h5>
+        </div>
+      </div>
+    </div>
   </div>
 </div>

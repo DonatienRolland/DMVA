@@ -1,0 +1,11 @@
+.services-home {
+  width: 93%;
+  margin: auto;
+}
+.service {
+  display: flex;
+  img {
+    margin-right: 20px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+  }
+}
