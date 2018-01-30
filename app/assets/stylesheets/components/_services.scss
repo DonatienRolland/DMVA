@@ -55,3 +55,71 @@
 .desc-maconnerie {
   margin-left: 30px;
 }
+
+
+
+
+// carousel
+.image-carousel {
+  height: 100px !important;
+}
+
+.item {
+  display: flex;
+  flex-direction: row;
+}
+
+.carousel-control {
+  background-image: none !important;
+}
+.carousel-control.right {
+  right: -35px;
+}
+.carousel-control.left {
+  left: -35px;
+}
+.service {
+  img{
+    margin: auto;
+  }
+}
+.description-service-xs {
+  margin-left: 10px;
+  h4 {
+    font-size: 13px !important;
+    font-weight: 300 !important;
+  }
+  a {
+    font-size: 10px !important;
+  }
+}
+
+.carousel{
+  background: #e8e7e7;
+  border: solid #DB874E 1px;
+  border-radius: 1px;
+  height: 225px;
+}
+
+.carousel-indicators {
+  bottom: -15px;
+  li {
+    border:solid #DB874E 1px;
+  }
+}
+
+.carousel-indicators > li:active{
+   background-color: #DB874E;
+  }
+
+
+
+
+
+
+
+
+
+
+
+

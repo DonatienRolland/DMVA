@@ -7,41 +7,68 @@
   <div class="row">
     <div class="col-xs-12 col-sm-4 action">
       <div class="icon-position">
-        <%= cl_image_tag 'hand-shake_1_vixpdh', :width=>50 %>
-        <h3>Rencontre avec le client</h3>
+        <div class="position-left">
+          <%= cl_image_tag 'hand-shake_1_vixpdh', :width=>50 %>
+        </div>
+        <div class="position-right">
+          <h3>Rencontre avec le client</h3>
+        </div>
       </div>
       <div class="text-action">
-        <h1 class="h1-text-action">1</h1>
-        <p>Lorem ipsum dolor sit amet, nam aliquip quaeque ne. Sint scribentur interpretaris id pro, molestie accusamus interesset sed ne, vidisse scripta ea eum.</p>
+        <div class="position-left">
+        <h1>1</h1>
+        </div>
+        <div class="position-right">
+          <p>Lorem ipsum dolor sit amet, nam aliquip quaeque ne. Sint scribentur interpretaris id pro, molestie accusamus interesset sed ne, vidisse scripta ea eum.</p>
+        </div>
       </div>
     </div>
     <div class="col-xs-12 col-sm-4 action">
       <div class="icon-position">
-        <%= cl_image_tag 'note_wvaruy', :height=>50 %>
-        <h3>Chiffrage du devis</h3>
+        <div class="position-left">
+          <%= cl_image_tag 'note_wvaruy', :height=>50 %>
+        </div>
+        <div class="position-right">
+          <h3>Chiffrage du devis</h3>
+        </div>
       </div>
       <div class="text-action">
-        <h1 class="h1-text-action">2</h1>
-        <p>Lorem ipsum dolor sit amet, nam aliquip quaeque ne. Sint scribentur interpretaris id pro, molestie accusamus interesset sed ne, vidisse scripta ea eum.</p>
+        <div class="position-left">
+          <h1>2</h1>
+        </div>
+        <div class="position-right">
+          <p>Lorem ipsum dolor sit amet, nam aliquip quaeque ne. Sint scribentur interpretaris id pro, molestie accusamus interesset sed ne, vidisse scripta ea eum.</p>
+        </div>
       </div>
     </div>
     <div class="col-xs-12 col-sm-4 action">
       <div class="icon-position">
-        <%= cl_image_tag 'helmet_1_ke3eks', :height=>50 %>
-        <h3>Réalisation des travaux</h3>
+        <div class="position-left">
+          <%= cl_image_tag 'helmet_1_ke3eks', :height=>50 %>
+        </div>
+        <div class="position-right">
+          <h3>Réalisation des travaux</h3>
+        </div>
       </div>
       <div class="text-action">
-        <h1 class="h1-text-action">3</h1>
-        <p>Lorem ipsum dolor sit amet, nam aliquip quaeque ne. Sint scribentur interpretaris id pro, molestie accusamus interesset sed ne, vidisse scripta ea eum.</p>
+        <div class="position-left">
+          <h1>3</h1>
+        </div>
+        <div class="position-right">
+         <p>Lorem ipsum dolor sit amet, nam aliquip quaeque ne. Sint scribentur interpretaris id pro, molestie accusamus interesset sed ne, vidisse scripta ea eum.</p>
+        </div>
       </div>
     </div>
   </div>
 </div>
 
-<div class="services-home">
+
+
+
+<div class="services-home hidden-xs">
   <h2>Nos Services</h2>
   <div class="service Assainissement">
-    <%= cl_image_tag 'road-construction-1264789_1920_iicyja', :height=>200 %>
+    <%= cl_image_tag 'road-construction-1264789_1920_iicyja', :height=>300 %>
     <div class="description-service">
       <h4>Assainissement</h4>
       <p>Lorem ipsum dolor sit amet, nam aliquip quaeque ne. Sint scribentur interpretaris id pro, molestie accusamus interesset sed ne, vidisse scripta ea eum.</p>
@@ -56,10 +83,10 @@
       <p>Lorem ipsum dolor sit amet, nam aliquip quaeque ne. Sint scribentur interpretaris id pro, molestie accusamus interesset sed ne, vidisse scripta ea eum.</p>
       <%= link_to 'En savoir plus', root_path %>
     </div>
-    <%= cl_image_tag 'site-1359677_1920_ldiqfq', :height=>200 %>
+    <%= cl_image_tag 'site-1359677_1920_ldiqfq', :height=>300 %>
   </div>
   <div class="service">
-    <%= cl_image_tag '33733592133_63b7a2cbef_o_oalkid', :height=>200 %>
+    <%= cl_image_tag '33733592133_63b7a2cbef_o_oalkid', :height=>300 %>
     <hr class="separation sep-centrale" />
     <div class="description-service desc-maconnerie">
       <h4>Maçonnerie</h4>
@@ -69,6 +96,72 @@
   </div>
   <%= link_to 'Voir nos réalisations', root_path %>
 </div>
+
+<div class="services-home-xs hidden-lg hidden-sm">
+
+  <div class="bs-example">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Carousel indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <!-- Wrapper for carousel items -->
+        <div class="carousel-inner">
+            <div class="item active">
+              <div class="service Assainissement">
+                <%= cl_image_tag 'road-construction-1264789_1920_iicyja', :height=>100 %>
+                <div class="description-service-xs">
+                  <h4>Assainissement</h4>
+                  <p>Lorem ipsum dolor sit amet, nam aliquip quaeque ne. Sint scribentur interpretaris id pro, molestie accusamus interesset sed ne, vidisse scripta ea eum.</p>
+                  <%= link_to 'En savoir plus', root_path %>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="service Assainissement">
+                <%= cl_image_tag 'site-1359677_1920_ldiqfq', :height=>100 %>
+                <div class="description-service-xs">
+                  <h4>Voirie</h4>
+                  <p>Lorem ipsum dolor sit amet, nam aliquip quaeque ne. Sint scribentur interpretaris id pro, molestie accusamus interesset sed ne, vidisse scripta ea eum.</p>
+                  <%= link_to 'En savoir plus', root_path %>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="service Assainissement">
+                <%= cl_image_tag '33733592133_63b7a2cbef_o_oalkid', :height=>100 %>
+                <div class="description-service-xs">
+                  <h4>Maçonnerie</h4>
+                  <p>Lorem ipsum dolor sit amet, nam aliquip quaeque ne. Sint scribentur interpretaris id pro, molestie accusamus interesset sed ne, vidisse scripta ea eum.</p>
+                  <%= link_to 'En savoir plus', root_path %>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="item">
+              <%= cl_image_tag 'Capture_d_écran_2018-01-30_à_16.31.44_dah5vm', class:"image-carousel" %>
+            </div> -->
+        </div>
+        <!-- Carousel controls -->
+        <a class="carousel-control left" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="carousel-control right" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+    </div>
+  </div>
+
+</div>
+
+
+
+
+
+
+
+
 
 <div class="projets-home">
   <h2>Derniers projet</h2>
