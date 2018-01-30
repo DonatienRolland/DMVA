@@ -1,7 +1,7 @@
 .banner {
   color: white;
   text-align: center;
-  height: calc(100vh - 120px);
+
   background-size: cover;
   background-position: center;
   background-color: rgba(0,0,0, 0.8);
@@ -44,4 +44,27 @@
     font-size: 68px;
     font-weight: bolder;
   }
+
 }
+.images-banner{
+  height: calc(100vh - 120px);
+  .carousel {
+    height: 100%;
+  }
+}
+.banner {
+  .carousel-inner{
+    height: 100%;
+  }
+  .carousel {
+    border: none;
+  }
+  .item {
+    object-fit: cover;
+  }
+}
+
+
+
+
+
