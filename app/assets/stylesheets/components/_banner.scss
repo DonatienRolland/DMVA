@@ -1,10 +1,9 @@
 .banner {
   color: white;
+  height: calc(100vh - 137px);
   text-align: center;
-
   background-size: cover;
   background-position: center;
-  background-color: rgba(0,0,0, 0.8);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -14,6 +13,8 @@
   font-size: 50px;
   font-weight: bold;
   text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
+  margin-bottom: 0;
+  margin-top: 0;
 }
 .banner p {
   font-size: 25px;
@@ -21,6 +22,7 @@
   color: rgb(255, 255, 255);
   opacity: 0.6;
   margin-bottom: 30px;
+  margin-top: 30px;
 }
 
 .btn-primary {
@@ -47,7 +49,8 @@
 
 }
 .images-banner{
-  height: calc(100vh - 120px);
+  height: calc(100vh - 137px);
+  border: none;
   .carousel {
     height: 100%;
   }
@@ -63,8 +66,6 @@
     object-fit: cover;
   }
 }
-
-
 
 
 
