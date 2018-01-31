@@ -1,6 +1,9 @@
 class Article < ApplicationRecord
-  mount_uploader :photo, PhotoUploader
+  validates :titre, presence: true
+  # validates :photo, presence: true
+  validates :description, presence: true
 
+  mount_uploader :photo, PhotoUploader
 
 private
 

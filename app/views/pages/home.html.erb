@@ -31,14 +31,6 @@
       </div>
   </div>
 
-
-
-
-<!--   <div class="banner-content">
-    <h1>Le Wagon Berlin</h1>
-    <p>Learn to code with us in Berlin</p>
-    <a class="btn btn-primary btn-lg">Start now</a>
-  </div> -->
 </div>
 
 
@@ -138,7 +130,9 @@
       <%= link_to 'En savoir plus', root_path %>
     </div>
   </div>
-  <%= link_to 'Voir nos réalisations', root_path %>
+  <div class="link-realisation">
+    <%= link_to 'Voir nos réalisations', root_path %>
+  </div>
 </div>
 
 <div class="services-home-xs hidden-lg hidden-sm">
@@ -204,6 +198,40 @@
 
 
 
+  <div class="accomplit">
+    <h2>Ce que nous avons accomplit</h2>
+    <div class="bloc-accompli">
+      <div class="desc-bloc-accompli">
+        <p>Lorem ipsum dolor sit amet, nam aliquip quaeque ne. Sint scribentur interpretaris id pro, molestie accusamus interesset sed ne, vidisse scripta ea eum.</p>
+        <div class="chiffres-accomplit">
+          <div class="chiffre-accomplit">
+            <h2>123</h2>
+            <h4>Projets</h4>
+          </div>
+          <div class="chiffre-accomplit">
+            <h2>105</h2>
+            <h4>Clients</h4>
+          </div>
+          <div class="chiffre-accomplit">
+            <h2>15</h2>
+            <h4>Employés</h4>
+          </div>
+          <div class="chiffre-accomplit">
+            <h2>25</h2>
+            <h4>Habilitations</h4>
+          </div>
+        </div>
+      </div>
+      <div class="card" style="background-image: linear-gradient(rgba(219, 135, 78, 0.76), rgba(219, 135, 78, 0.76)), url(<%= cl_image_path 'workers-535533_1920_conxuq' %>);">
+        <div class="card-description">
+          <h3>15</h3>
+          <h5>Années d'expérience dans le secteur</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
 
 
 
@@ -216,21 +244,20 @@
     <%= link_to 'Voirie', root_path %>
     <%= link_to 'Assainissement', root_path %>
   </div>
-  <div class="projet">
-
-  </div>
-  <div class="accomplit">
-    <h2>Ce que nous avons accomplit</h2>
-    <div class="bloc-accompli">
-      <div class="desc-bloc-accompli">
-        <p>Lorem ipsum dolor sit amet, nam aliquip quaeque ne. Sint scribentur interpretaris id pro, molestie accusamus interesset sed ne, vidisse scripta ea eum.</p>
-      </div>
-      <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url(<%= cl_image_path 'workers-535533_1920_conxuq' %>);">
-        <div class="card-description">
-          <h3>15</h3>
-          <h5>Années d'expérience dans le secteur</h5>
+  <div class="projets">
+    <div class="row">
+      <% @articles.each do |article| %>
+        <div class="col-xs-12 col-sm-3">
+          <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%= cl_image_path article.photo %>');">
+            <div class="card-category">Popular</div>
+            <div class="card-description">
+              <h2><%= article.titre %></h2>
+              <p>Very cool city, the best</p>
+            </div>
+          </div>
         </div>
-      </div>
+      <% end %>
     </div>
+
   </div>
 </div>
