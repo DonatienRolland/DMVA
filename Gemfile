@@ -29,6 +29,7 @@ gem 'attachinary', github: 'assembler/attachinary'
 gem 'jquery-fileupload-rails'
 gem 'coffee-rails'
 
+
 group :development, :test do
   gem 'pry-byebug'
   gem 'pry-rails'

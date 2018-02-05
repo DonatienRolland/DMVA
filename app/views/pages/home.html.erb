@@ -229,7 +229,6 @@
 
 
 
-
 <div class="projets-home">
   <h2>Actualité</h2>
   <div class="categroy">
@@ -241,17 +240,19 @@
   </div>
   <div class="projets">
     <div class="row">
-      <% @articles.each do |article| %>
-        <div class="col-xs-12 col-sm-3">
-          <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%= cl_image_path article.photo %>');">
-            <div class="card-category">Démolition</div>
-            <div class="card-description">
-              <h2><%= article.titre %></h2>
-              <p><%= truncate article.description, length: 100 %></p>
+      <div class="owl-carousel owl-theme">
+        <% @articles.each do |article| %>
+          <div class="item">
+            <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%= cl_image_path article.photo %>');">
+              <div class="card-category">Démolition</div>
+              <div class="card-description">
+                <h2><%= article.titre %></h2>
+                <p><%= truncate article.description, length: 100 %></p>
+              </div>
             </div>
           </div>
-        </div>
-      <% end %>
+        <% end %>
+      </div>
     </div>
 
   </div>

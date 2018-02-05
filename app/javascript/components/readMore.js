@@ -14,10 +14,10 @@ $(document).ready(function() {
 
             var c = content.substr(0, showChar);
             var h = content.substr(showChar, content.length - showChar);
-            console.log(h)
+
 
             var html = c + '<span class="moreellipses">' + ellipsestext+ '&nbsp;</span><span class="morecontent"><span>' + h + '</span>&nbsp;&nbsp;<a href="" class="morelink">' + moretext + '</a></span>';
-        console.log(html)
+
 
             $(this).html(html);
         }
