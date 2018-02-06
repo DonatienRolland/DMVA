@@ -83,8 +83,8 @@
 
 .demande-devis {
   background-color: $orange;
-    color: $darkbleu !important;
-    text-decoration: none  !important;
+  color: $darkbleu !important;
+  text-decoration: none  !important;
   width: 103px;
   font-size: 11px;
   text-align: center;
@@ -93,7 +93,39 @@
   height: 80px;
 }
 
+.demande-devis:hover {
+  text-decoration:underline  !important;
 
+}
+
+.link {
+  a {
+  position: relative;
+  text-decoration: none;
+  }
+  a:hover {
+  color: $orange;
+  }
+  a:before {
+  content: "";
+  position: absolute;
+  width: 80%;
+  height: 2px;
+  bottom: -6px;
+  left: 10%;
+  background-color: $orange;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+  }
+  a:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+}
 
 
 
