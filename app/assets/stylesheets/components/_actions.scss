@@ -20,7 +20,7 @@
   align-items: center;
   margin-right: 20px;
   justify-content: center;
-  h1{
+  h2{
     color: $light-gray !important;
   }
 }
@@ -33,7 +33,7 @@
   align-items: center;
 }
 
-.h1-text-action {
+.h2-text-action {
   width: 200px;
   align-items: center;
   text-align: center;
@@ -42,7 +42,7 @@
 .position-left {
   flex: 20%;
   text-align: center;
-  h1 {
+  h2 {
     margin: 0;
   }
 }
