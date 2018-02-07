@@ -12,59 +12,57 @@
 
 
 <div class="actions">
-  <div class="row">
-    <div class="col-xs-12 col-sm-4 action">
-      <div class="icon-position">
-        <div class="position-left">
-          <%= cl_image_tag 'hand-shake_1_vixpdh', :width=>50 %>
-        </div>
-        <div class="position-right">
-          <h3>Rencontre client</h3>
-        </div>
+  <div class="col-xs-12 col-sm-4 action">
+    <div class="icon-position">
+      <div class="position-left">
+        <%= cl_image_tag 'hand-shake_1_vixpdh', :width=>50 %>
       </div>
-      <div class="text-action">
-        <div class="position-left">
-        <h1>1</h1>
-        </div>
-        <div class="position-right">
-          <p>Nous prenons contact avec vous par téléphone ou appelez-nous directement. Nous nous concertons alors avec vous pour organiser une rencontre directement sur le lieu du futur chantier.</p>
-        </div>
+      <div class="position-right">
+        <h3>Rencontre client</h3>
       </div>
     </div>
-    <div class="col-xs-12 col-sm-4 action">
-      <div class="icon-position">
-        <div class="position-left">
-          <%= cl_image_tag 'note_wvaruy', :height=>50 %>
-        </div>
-        <div class="position-right">
-          <h3>Chiffrage du devis</h3>
-        </div>
+    <div class="text-action">
+      <div class="position-left">
+      <h1>1</h1>
       </div>
-      <div class="text-action">
-        <div class="position-left">
-          <h1>2</h1>
-        </div>
-        <div class="position-right">
-          <p>Lors du rendez-vous, nous sommes à votre écoute pour comprendre vos besoins et l'utilité des travaux. Nous étudions la meilleure solution et effectuons la prise de mesure.</p>
-        </div>
+      <div class="position-right">
+        <p>Nous prenons contact avec vous par téléphone ou appelez-nous directement. Nous nous concertons alors avec vous pour organiser une rencontre directement sur le lieu du futur chantier.</p>
       </div>
     </div>
-    <div class="col-xs-12 col-sm-4 action">
-      <div class="icon-position">
-        <div class="position-left">
-          <%= cl_image_tag 'helmet_1_ke3eks', :height=>50 %>
-        </div>
-        <div class="position-right">
-          <h3>Réalisation des travaux</h3>
-        </div>
+  </div>
+  <div class="col-xs-12 col-sm-4 action">
+    <div class="icon-position">
+      <div class="position-left">
+        <%= cl_image_tag 'note_wvaruy', :height=>50 %>
       </div>
-      <div class="text-action">
-        <div class="position-left">
-          <h1>3</h1>
-        </div>
-        <div class="position-right">
-         <p>Enfin, moins d'une semaine après votre entretien téléphonique, nous vous fournissons un devis du montant des travaux. Lorsque vous nous le renvoyez signé, nous nous mettons au travail !</p>
-        </div>
+      <div class="position-right">
+        <h3>Chiffrage du devis</h3>
+      </div>
+    </div>
+    <div class="text-action">
+      <div class="position-left">
+        <h1>2</h1>
+      </div>
+      <div class="position-right">
+        <p>Lors du rendez-vous, nous sommes à votre écoute pour comprendre vos besoins et l'utilité des travaux. Nous étudions la meilleure solution et effectuons la prise de mesure.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-xs-12 col-sm-4 action">
+    <div class="icon-position">
+      <div class="position-left">
+        <%= cl_image_tag 'helmet_1_ke3eks', :height=>50 %>
+      </div>
+      <div class="position-right">
+        <h3>Réalisation des travaux</h3>
+      </div>
+    </div>
+    <div class="text-action">
+      <div class="position-left">
+        <h1>3</h1>
+      </div>
+      <div class="position-right">
+       <p>Enfin, moins d'une semaine après votre entretien téléphonique, nous vous fournissons un devis du montant des travaux. Lorsque vous nous le renvoyez signé, nous nous mettons au travail !</p>
       </div>
     </div>
   </div>
@@ -190,10 +188,9 @@
 
 
   <div class="accomplit">
-    <h2>Ce que nous avons accomplit</h2>
     <div class="bloc-accompli">
       <div class="desc-bloc-accompli">
-        <p>Lorem ipsum dolor sit amet, nam aliquip quaeque ne. Sint scribentur interpretaris id pro, molestie accusamus interesset sed ne, vidisse scripta ea eum.</p>
+        <h2>Ce que nous avons accomplit</h2>
         <div class="chiffres-accomplit">
           <div class="chiffre-accomplit">
             <h2>+2000</h2>
@@ -232,7 +229,6 @@
 
 
 
-
 <div class="projets-home">
   <h2>Actualité</h2>
   <div class="categroy">
@@ -243,7 +239,6 @@
     <%= link_to 'Assainissement', root_path %>
   </div>
   <div class="projets">
-    <div class="row">
         <% @articles.each do |article| %>
           <div class="col-xs-12 col-sm-3">
             <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%= cl_image_path article.photo %>');">
@@ -256,7 +251,6 @@
           </div>
 
         <% end %>
-    </div>
 
   </div>
 </div>
