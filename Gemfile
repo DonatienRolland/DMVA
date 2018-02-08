@@ -29,6 +29,8 @@ gem "geocoder"
 
 gem "simple_form"
 
+gem 'mail_form'
+
 gem "coffee-rails"
 gem "gmaps4rails"
 
