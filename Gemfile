@@ -27,6 +27,8 @@ gem 'carrierwave', '~> 0.11.2'
 
 gem "geocoder"
 
+gem 'mail_form'
+
 gem "simple_form"
 
 gem "coffee-rails"

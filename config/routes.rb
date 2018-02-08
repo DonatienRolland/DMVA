@@ -4,6 +4,9 @@ Rails.application.routes.draw do
   # get 'contact', to: 'pages#contact',  as: :contact
   get 'realisations', to: 'pages#realisation',  as: :realisations
 
-  resources :messages, only: [:create, :index], :path => "contact"
+
+
+match '/contact',     to: 'contacts#index',             via: 'get'
+resources "contacts", only: [:index, :create]
 
 end
