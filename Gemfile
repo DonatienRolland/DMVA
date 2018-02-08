@@ -28,7 +28,7 @@ gem 'carrierwave', '~> 0.11.2'
 gem 'attachinary', github: 'assembler/attachinary'
 gem 'jquery-fileupload-rails'
 gem 'coffee-rails'
-
+gem "geocoder"
 
 group :development, :test do
   gem 'pry-byebug'
