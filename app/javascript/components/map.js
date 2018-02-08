@@ -14,6 +14,7 @@
 
 var handler = Gmaps.build('Google', { markers: { clusterer: undefined } });
   handler.buildMap({ internal: { id: 'map' } }, function() {
+    console.log("coucou")
     markers = handler.addMarkers(
       [
         {
