@@ -1,12 +1,10 @@
 .banner-apropos {
   color: white;
   height: 40vh;
-  text-align: center;
   background-size: cover;
   background-position: center;
   display: flex;
   align-items: flex-end;
-  justify-content: flex-start;
   h1 {
     display: flex;
     width: 40%;
@@ -14,4 +12,21 @@
     align-items: center;
     justify-content: space-around;
   }
+}
+
+.business-description{
+  margin-top : 5%;
+  display: flex;
+  justify-content: space-around;
+  hr {
+    width: 30px;
+  }
+}
+
+.image-entreprise{
+  height: 20vh;
+}
+
+.business-text{
+  width: 144px;
 }
