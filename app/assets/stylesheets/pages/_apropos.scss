@@ -17,16 +17,61 @@
 .business-description{
   margin-top : 5%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding: 0 5%;
   hr {
-    width: 30px;
+    width: 100px;
+    height: 5px;
+    border-radius: 1px;
+    background-color: #DB874E;
+    margin: 25px 0px;
+  }
+  .business-text{
+  width: 245px;
+  margin-left: -10%;
+  }
+  .image-entreprise{
+  height: 38vh;
   }
 }
 
-.image-entreprise{
-  height: 20vh;
+
+.habilitations{
+  margin-top : 5%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5%;
+  hr {
+    width: 5px;
+    top: 0;
+    left: -46%;
+    height: 100px;
+    clear: both;
+    margin-top: 10px;
+    border-radius: 1px;
+    background-color: #DB874E;
+    margin: 10px;
+  }
+  img{
+    height: 38vh;
+  }
 }
 
-.business-text{
-  width: 144px;
+.habilitations-text{
+  width: 500px;
+}
+
+.infrastructures {
+  margin-top: 5%;
+  height: 30vh;
+  background-size: cover;
+  background-position: top;
+}
+
+.logo_blanc{
+  width: 10vh;
+}
+
+.lequipe{
+  margin: 5%;
 }
