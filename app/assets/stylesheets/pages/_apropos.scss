@@ -55,23 +55,39 @@
   img{
     height: 38vh;
   }
+  .habilitations-text{
+  width: 500px;
+  }
 }
 
-.habilitations-text{
-  width: 500px;
-}
 
 .infrastructures {
   margin-top: 5%;
+  padding: 0 5%;
   height: 30vh;
   background-size: cover;
   background-position: top;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  img{
+    height: 85%;
+  }
+  .infrastructures-text{
+    font-weight: bold;
+  }
+  p{
+    text-shadow: 1px 1px 3px black;
+    font-size: 2em;
+    color: white;
+  }
+  a{
+    color: black;
+  }
 }
 
-.logo_blanc{
-  width: 10vh;
-}
 
 .lequipe{
   margin: 5%;
+  caption-side: top;
 }
