@@ -1,0 +1,14 @@
+
+
+
+<%= simple_form_for(@contact, url: contact_path) do |f| %>
+  <%= f.input :name, placeholder: "Name" %>
+  <%= f.input :email, placeholder: "Email" %>
+  <%= f.input :phone, placeholder: "telephone" %>
+  <%= f.input :objet, placeholder: "Subject",as: :select , collection: [ "Assainissement", "Voirie", "Maçonnerie", "Autre"] %>
+  <%= f.input :message, label: "Message", as: :text, :input_html => { :cols => 50, :rows => 10 }, placeholder: "Message" %>
+  <%= f.submit "Send", class: "btn btn-primary btn-exercise btn-exercise-important" %>
+<% end %>
+
+
+

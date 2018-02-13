@@ -7,10 +7,10 @@ Rails.application.routes.draw do
   get 'realisations', to: 'pages#realisation',  as: :realisations
 
 
-
-match '/contact',     to: 'contacts#index',             via: 'get'
-resources "contacts", only: [:index, :create]
-
-
+  get 'contact', to: 'contacts#new', as: 'contact'
+  post 'contact', to: 'contacts#create'
 
 end
+
+
+

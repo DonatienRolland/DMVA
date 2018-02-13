@@ -27,9 +27,10 @@ gem 'carrierwave', '~> 0.11.2'
 
 gem "geocoder"
 
-gem 'mail_form'
 
-gem "simple_form"
+# makes navigating your web application faste
+gem 'turbolinks', '~> 5.0.0'
+
 
 gem "coffee-rails"
 gem "gmaps4rails"
@@ -37,8 +38,6 @@ gem "gmaps4rails"
 source 'https://rails-assets.org' do
   gem "rails-assets-underscore"
 end
-
-
 
 group :development, :test do
   gem 'pry-byebug'
