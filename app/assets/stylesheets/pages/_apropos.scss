@@ -11,6 +11,7 @@
     height: 50%;
     align-items: center;
     justify-content: space-around;
+    font-size: 50px;
   }
 }
 
@@ -32,6 +33,19 @@
   }
   .image-entreprise{
   height: 38vh;
+  }
+}
+
+.business-description-xs{
+  margin-top : 5%;
+  background-size: cover;
+  background-position: top;
+  .business-text{
+    padding: 5%;
+  }
+  h3{
+    margin-top: 0;
+    color: white;
   }
 }
 
@@ -60,24 +74,59 @@
   }
 }
 
+.habilitations-xs{
+  margin-top : 5%;
+  background-size: cover;
+  background-position: top;
+  .habilitations-text{
+    padding: 5%;
+  }
+  h3{
+    margin-top: 0;
+    color: white;
+  }
+}
+
 
 .infrastructures {
   margin: 5% -3% 0 -3%;
   padding: 0 5%;
-  height: 30vh;
+  height: 40vh;
   background-size: cover;
   background-position: top;
   display: flex;
   justify-content: space-around;
   align-items: center;
   img{
-    height: 85%;
+    height: 60%;
   }
   .infrastructures-text{
     font-weight: bold;
+    width: 30%;
   }
   p{
-    font-size: 2em;
+    font-size: 1.5em;
+    color: white;
+  }
+  a{
+    color: black;
+  }
+}
+
+.infrastructures-xs {
+  margin: 5% -3% 0 -3%;
+  padding: 0 20%;
+  height: 40vh;
+  background-size: cover;
+  background-position: top;
+  display: flex;
+  align-items: center;
+  .infrastructures-text{
+    font-weight: bold;
+    width: 100%;
+  }
+  p{
+    font-size: 1.5em;
     color: white;
   }
   a{
@@ -88,5 +137,36 @@
 
 .lequipe{
   margin: 5%;
-  caption-side: top;
+  .lequipe-carousel{
+    display: flex;
+    justify-content: space-around;
+  }
+  .member{
+    width: 20%;
+    background-color: #c8c7c8;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    img{
+      width: 100%;
+      margin-bottom: 15px;
+    }
+    p{
+      width: 100%;
+      color: black;
+      text-align: justify;
+    }
+    .member-description{
+      font-size: 9px;
+    }
+  }
+  .member-contact{
+    display: flex;
+    justify-content: space-around;
+    a{
+      width: 15%;
+    }
+  }
 }
