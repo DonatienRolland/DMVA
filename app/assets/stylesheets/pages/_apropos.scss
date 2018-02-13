@@ -1,12 +1,10 @@
 .banner-apropos {
   color: white;
   height: 40vh;
-  text-align: center;
   background-size: cover;
   background-position: center;
   display: flex;
   align-items: flex-end;
-  justify-content: flex-start;
   h1 {
     display: flex;
     width: 40%;
@@ -14,4 +12,81 @@
     align-items: center;
     justify-content: space-around;
   }
+}
+
+.business-description{
+  margin-top : 5%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5%;
+  hr {
+    width: 100px;
+    height: 5px;
+    border-radius: 1px;
+    background-color: #DB874E;
+    margin: 25px 0px;
+  }
+  .business-text{
+  width: 245px;
+  margin-left: -10%;
+  }
+  .image-entreprise{
+  height: 38vh;
+  }
+}
+
+
+.habilitations{
+  margin-top : 5%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5%;
+  hr {
+    width: 5px;
+    top: 0;
+    left: -46%;
+    height: 100px;
+    clear: both;
+    margin-top: 10px;
+    border-radius: 1px;
+    background-color: #DB874E;
+    margin: 10px;
+  }
+  img{
+    height: 38vh;
+  }
+  .habilitations-text{
+  width: 500px;
+  }
+}
+
+
+.infrastructures {
+  margin: 5% -3% 0 -3%;
+  padding: 0 5%;
+  height: 30vh;
+  background-size: cover;
+  background-position: top;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  img{
+    height: 85%;
+  }
+  .infrastructures-text{
+    font-weight: bold;
+  }
+  p{
+    font-size: 2em;
+    color: white;
+  }
+  a{
+    color: black;
+  }
+}
+
+
+.lequipe{
+  margin: 5%;
+  caption-side: top;
 }
