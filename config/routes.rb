@@ -9,6 +9,7 @@ Rails.application.routes.draw do
 
   get 'contact', to: 'contacts#new', as: 'contact'
   post 'contact', to: 'contacts#create'
+  get 'contact_confirmation', to: 'messages#confirmation'
 
 end
 
