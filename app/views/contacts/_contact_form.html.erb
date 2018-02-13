@@ -2,12 +2,12 @@
 
 
 <%= simple_form_for(@contact, url: contact_path) do |f| %>
-  <%= f.input :name, placeholder: "Name" %>
-  <%= f.input :email, placeholder: "Email" %>
-  <%= f.input :phone, placeholder: "telephone" %>
-  <%= f.input :objet, placeholder: "Subject",as: :select , collection: [ "Assainissement", "Voirie", "Maçonnerie", "Autre"] %>
-  <%= f.input :message, label: "Message", as: :text, :input_html => { :cols => 50, :rows => 10 }, placeholder: "Message" %>
-  <%= f.submit "Send", class: "btn btn-primary btn-exercise btn-exercise-important" %>
+  <%= f.input :name, placeholder: "Name", label: false, :wrapper_html => { :class => 'small-width-input' } %>
+  <%= f.input :email, placeholder: "Email", label: false, :wrapper_html => { :class => 'small-width-input' } %>
+  <%= f.input :phone, placeholder: "telephone", label: false, :wrapper_html => { :class => 'small-width-input' }  %>
+  <%= f.input :objet, placeholder: "Nature de prise de contact", as: :select , collection: [ "Demande de devis", "Nous connaitre", "Prise de contact", "Autre"], label: false, :wrapper_html => { :class => 'small-width-input lastchild' } %>
+  <%= f.input :message, as: :text, :input_html => { :style => 'width: 100%', :rows => 3 }, placeholder: "Message", label: false, :wrapper_html => { :class => 'large-width-input' }  %>
+  <%= f.submit "Envoyer", class: "btn btn-primary btn-exercise btn-exercise-important"%>
 <% end %>
 
 
