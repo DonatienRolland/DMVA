@@ -20,11 +20,11 @@ $headers-font: "Montserrat", "Helvetica", "sans-serif";
 
 p {
   font-weight: light;
-  font-size: 13px !important;
+  font-size: 13px;
   color: #C8C7C8;
 }
 h1 {
-  font-size: 30px !important;
+  font-size: 30px;
   font-weight: bold !important;
 }
 
@@ -48,4 +48,8 @@ h5 {
 h6 {
   font-size: 5px !important;
 }
-
+span {
+  font-weight: light;
+  font-size: 13px;
+  color: #C8C7C8;
+}
