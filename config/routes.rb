@@ -6,10 +6,10 @@ Rails.application.routes.draw do
   # get 'contact', to: 'pages#contact',  as: :contact
   get 'realisations', to: 'pages#realisation',  as: :realisations
 
-
-  get 'contact', to: 'contacts#new', as: 'contact'
-  post 'contact', to: 'contacts#create'
-  get 'contact_confirmation', to: 'messages#confirmation'
+  resources :contacts, only: [ :new, :create ]
+  # get 'contact', to: 'contacts#new', as: 'contact'
+  # post 'contact', to: 'contacts#create'
+  # get 'contact_confirmation', to: 'messages#confirmation'
 
 end
 

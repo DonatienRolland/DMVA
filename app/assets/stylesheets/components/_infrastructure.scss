@@ -1,0 +1,29 @@
+#telecharger {
+  background-color: $orange;
+  padding: 10px 20px;
+  border-radius: 1px;
+}
+.brochure {
+  margin: 5% -3% 0 -3%;
+  padding: 0 5%;
+  height: 20vh;
+  background-size: cover;
+  background-position: top;
+  align-items: center;
+
+  .brochure-text{
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+     align-items: center;
+  }
+  h3{
+    font-size: 2em;
+    color: white;
+    width: 65%;
+  }
+  a{
+    color: black;
+  }
+}

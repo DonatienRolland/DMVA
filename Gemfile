@@ -27,7 +27,8 @@ gem 'carrierwave', '~> 0.11.2'
 
 gem "geocoder"
 
-
+gem 'mail_form', '~> 1.5', '>= 1.5.1'
+gem 'sendgrid-ruby'
 # makes navigating your web application faste
 gem 'turbolinks', '~> 5.0.0'
 
