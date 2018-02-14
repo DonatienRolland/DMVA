@@ -9,9 +9,9 @@ class ContactsController < ApplicationController
 
   def create
     @contact = Contact.new(params[:contact])
-    @contact.request = request
-
-      if @contact.deliver
+    # @contact.request = request
+      if @contact.valid?
+        ContactMailer.new_contact(@contact).deliver
         flash.now[:error] = nil
       else
         flash.now[:error] = "Le message n'a pas pu être envoyé"

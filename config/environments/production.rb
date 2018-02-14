@@ -3,18 +3,9 @@ Rails.application.configure do
   config.action_mailer.default_url_options = { host: "https://polar-savannah-40397.herokuapp.com/" }
   config.action_mailer.delivery_method = :smtp
 
- ActionMailer::Base.smtp_settings = {
-    :user_name => ENV['SENDGRID_USERNAME'],
-    :password => ENV['SENDGRID_PASSWORD'],
-    :domain => 'heroku.com',
-    :address => 'smtp.sendgrid.net',
-    :port => 587,
-    :authentication => :plain,
-    :enable_starttls_auto => true
-  }
 
 
-    # Verifies that versions and hashed value of the package contents in the project's package.json
+  # Verifies that versions and hashed value of the package contents in the project's package.json
   config.webpacker.check_yarn_integrity = false
   # Settings specified here will take precedence over those in config/application.rb.
 
@@ -55,7 +46,7 @@ Rails.application.configure do
   # Specifies the header that your server uses for sending files.
   # config.action_dispatch.x_sendfile_header = 'X-Sendfile' # for Apache
   # config.action_dispatch.x_sendfile_header = 'X-Accel-Redirect' # for NGINX
-  config.action_mailer.raise_delivery_errors = true
+
   # Mount Action Cable outside main process or domain
   # config.action_cable.mount_path = nil
   # config.action_cable.url = 'wss://example.com/cable'
