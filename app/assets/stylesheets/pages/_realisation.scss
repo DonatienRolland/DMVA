@@ -1,0 +1,62 @@
+.banner-realisation {
+  color: white;
+  height: 40vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+  h1 {
+    display: flex;
+    width: 40%;
+    height: 50%;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 50px;
+  }
+}
+
+.references{
+  margin-top: 5%;
+  margin-bottom: 5%;
+  height: 50vh;
+  display: flex;
+  justify-content: space-evenly;
+  hr {
+    width: 5px;
+    top: 0;
+    left: -46%;
+    height: 100px;
+    clear: both;
+    margin-top: 10px;
+    border-radius: 1px;
+    background-color: #DB874E;
+    margin: 10px;
+  }
+  .references-text{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    h2{
+      margin-bottom: 8%;
+    }
+  }
+  .references-img{
+    width: 15%;
+    height: 90%;
+    padding: 2%;
+    background-size: cover;
+    background-position: center;
+    align-self: flex-end;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    p{
+      color: black;
+      font-weight: bold;
+    }
+    .references-nb{
+      font-size: 5.3em;
+      margin-bottom: -15%;
+    }
+  }
+}
