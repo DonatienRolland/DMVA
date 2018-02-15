@@ -98,7 +98,7 @@
     </div>
     <%= cl_image_tag 'site-1359677_1920_ldiqfq', :height=>300 %>
   </div>
-  <div class="service">
+  <div class="service maconerie-service">
     <%= cl_image_tag '33733592133_63b7a2cbef_o_oalkid', :height=>300 %>
     <hr class="separation sep-centrale" />
     <div class="description-service desc-maconnerie">
@@ -108,9 +108,10 @@
       </span>
     </div>
   </div>
-  <div class="link-realisation">
-    <%= link_to 'Voir nos réalisations', root_path %>
-  </div>
+  <%= link_to realisations_path, class:"link-realisation" do %>
+    <h3>Voir nos réalisations</h3>
+    <img src="assets/right-arrow.png" alt="next-realisations" style="height: 40px">
+  <% end %>
 </div>
 
 
@@ -124,18 +125,17 @@
 
 
 
-
   <div class="accomplit">
     <div class="bloc-accompli">
       <div class="desc-bloc-accompli">
         <h2>Ce que nous avons accomplit</h2>
-        <div class="chiffres-accomplit">
+        <div class="chiffres-accomplit" id="counter">
           <div class="chiffre-accomplit">
-            <h2>+2000</h2>
+            <div class="counter-value" data-count="2000">0</div>
             <h4>Projets</h4>
           </div>
           <div class="chiffre-accomplit">
-            <h2>250</h2>
+            <div class="counter-value" data-count="250">0</div>
             <h4>Clients</h4>
           </div>
           <div class="chiffre-accomplit">
@@ -168,27 +168,9 @@
 
 
 <div class="projets-home">
-  <h2>Actualité</h2>
-  <div class="categroy">
-    <%= link_to 'Tout afficher', root_path %>
-    <%= link_to 'Démolition', root_path %>
-    <%= link_to 'Maçonnerie', root_path %>
-    <%= link_to 'Voirie', root_path %>
-    <%= link_to 'Assainissement', root_path %>
-  </div>
-  <div class="projets">
-        <% @articles.each do |article| %>
-          <div class="col-xs-12 col-sm-3">
-            <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%= cl_image_path article.photo %>');">
-              <div class="card-category">Démolition</div>
-              <div class="card-description">
-                <h2><%= article.titre %></h2>
-                <p><%= truncate article.description, length: 100 %></p>
-              </div>
-            </div>
-          </div>
+  <h2>Actualités</h2>
 
-        <% end %>
+  <%= render 'shared/actualite-dynamique' %>
 
-  </div>
+
 </div>

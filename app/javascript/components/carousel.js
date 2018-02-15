@@ -20,11 +20,17 @@ function organizeCarousel() {
     }
   });
 
-  // $('#myCarousel').on('slid', '', checkitem);
+  $(".owl-demo").owlCarousel({
+    autoPlay : 2000,
+    stopOnHover : true,
+    navigation:true,
+    paginationSpeed : 1000,
+    goToFirstSpeed : 1000,
+    singleItem : true,
+    autoHeight : true,
+    transitionStyle:"fade"
+  });
 
-  // $(document).ready(function(){
-  //   checkitem();
-  // });
 }
 
 export { organizeCarousel };

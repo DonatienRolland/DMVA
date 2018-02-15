@@ -5,6 +5,7 @@
   margin: auto;
   display: flex;
   justify-content: space-evenly;
+}
   .carousel-inner{
     width: 85%;
     margin: auto;
@@ -38,14 +39,19 @@
     }
   }
   .carousel-control{
+    background-color: none;
     // Position the arrows near the card borders
     width: 7%;
     &.left{
-      background-image: none;
+      background-image: none !important;
+      background-color: none;
     }
     &.right{
-      background-image: none;
+      background-image: none !important;
+      background-color: none;
     }
   }
-}
+    .carousel-indicators {
+      bottom: -13px;
+    }
 
