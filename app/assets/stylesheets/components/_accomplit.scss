@@ -58,20 +58,14 @@
 
 
 
-
-
-
-
-
-#owl-demo .item{
-  margin: 3px;
+.counter-value {
+  color: $orange;
+  font-family: $headers-font;
+  font-weight: 500;
+  line-height: 1.1;
+  margin-top: 25px;
+  font-size: 30px;
 }
-#owl-demo .item img{
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
 
 
 

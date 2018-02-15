@@ -1,0 +1,27 @@
+<div class="categroy">
+<!--     <%= link_to 'Tout afficher', root_path %>
+    <%= link_to 'Démolition', root_path %>
+    <%= link_to 'Maçonnerie', root_path %>
+    <%= link_to 'Voirie', root_path %>
+    <%= link_to 'Assainissement', root_path %> -->
+  </div>
+
+<div class="projets hidden-xs">
+  <div class="article-two-column-one-row article-row">
+    <%= image_tag @articles.first.photo, class:"article-image width-image-50" %>
+    <div class="description-article description-article-width-50">
+      <%= @articles.first.titre %>
+      <img src="assets/file.png" alt="" style="height:25px">
+      <a href="" class="article-link"></a>
+    </div>
+  </div>
+
+
+</div>
+
+<div class="hidden-sm hidden-lg">
+  <% @articles.each do |article|   %>
+
+  <% end %>
+
+</div>
