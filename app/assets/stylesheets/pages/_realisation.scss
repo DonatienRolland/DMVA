@@ -87,14 +87,16 @@
     .realisations-objet{
       background-size: cover;
       background-position: center;
-      padding: 2%;
       height: 46%;
-      div{
+      .hover-effect{
         height: 100%;
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
         align-content: flex-start;
+        padding: 4%;
+        opacity: 0;
+        background-color: rgba(0, 0, 0, 0.5);
         p{
           color: white;
         }
@@ -106,9 +108,10 @@
           flex-grow: 1;
         }
       }
-    }
-    .realisations-objet:hover {
-      background-image: linear-gradient(-225deg, rgba(89, 92, 93, 0.15) 0%, rgba(40, 42, 44, 0.28) 50%), url('assets/Tracteur_profil');
+      .hover-effect:hover{
+        opacity: 1;
+      }
+
     }
   }
 }
