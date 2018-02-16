@@ -1,25 +1,21 @@
 .banner {
   color: white;
-  height: calc(100vh - 137px);
+  height: 85vh;
   text-align: center;
   background-size: cover;
   background-position: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
+  padding: 2% 8%;
 }
 .banner h1 {
   font-weight: bold;
   text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
-  margin-bottom: 0;
-  margin-top: 0;
+  margin: 0;
 }
 .banner p {
   font-size: 25px;
   font-weight: lighter;
-  color: rgb(255, 255, 255);
-  opacity: 0.6;
+  color: white;
+  opacity: 0.8;
   margin-bottom: 30px;
   margin-top: 30px;
 }
@@ -31,17 +27,15 @@
 .banner-content {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  height: 100%;
+  width: 70%;
   justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 70px;
-  right: 100px;
-  text-align: -webkit-right;
+  align-items: left;
+  text-align: left;
 }
 
 .images-banner{
-  height: calc(100vh - 137px);
+  height: 85vh;
   border: none;
   .carousel {
     height: 100%;
