@@ -26,6 +26,7 @@
 }
 .actions {
   padding: 30px;
+  display: flex;
 }
 .text-action {
   display: flex;
@@ -52,5 +53,14 @@
   margin-left: 12px;
   p{
     margin: 0;
+  }
+}
+
+.separation-actions{
+  padding: 0 30px;
+  margin-bottom: 5%;
+  hr{
+    height: 3px;
+    background-color: #DB874E;
   }
 }
