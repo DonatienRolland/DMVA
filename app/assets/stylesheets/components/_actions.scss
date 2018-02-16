@@ -1,32 +1,31 @@
+.actions {
+  position: relative;
+  margin-top: 50px;
+  margin-bottom: 60px;
+  display: flex;
+
 .action {
+  margin-bottom: 40px;
   display: flex;
   flex-direction: column;
-  justify-content:center;
+  justify-content: center;
   h3 {
     margin-top: 0;
     font-size: 19px !important;
     font-weight: 600 !important;
   }
-  margin-top: 50px;
-  margin-bottom: 20px;
   p {
     color: $light-gray !important;
   }
 }
 
+}
 .icon-position {
   display: flex;
   flex-direction: row;
   align-items: center;
   margin-right: 20px;
   justify-content: center;
-  h2{
-    color: $light-gray !important;
-  }
-}
-.actions {
-  padding: 30px;
-  display: flex;
 }
 .text-action {
   display: flex;
@@ -57,10 +56,15 @@
 }
 
 .separation-actions{
-  padding: 0 30px;
-  margin-bottom: 5%;
+  position: absolute;
+  bottom: 0px;
+  right: 10%;
+  left: 10%;
   hr{
-    height: 3px;
-    background-color: #DB874E;
+    height: 1px;
+    background-color: $light-gray;
+    // width: 80vw;
+    margin: 0;
+    border-top: none;
   }
 }
