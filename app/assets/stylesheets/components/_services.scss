@@ -1,10 +1,13 @@
 .services-home {
   padding: 0 6%;
   margin-top: 20px;
-  position: relative;
+  // position: relative;
 }
 .service {
   margin: 60px 0;
+  img {
+    max-height: 350px;
+  }
   a {
     color: black;
     font-size: 15px;
@@ -18,7 +21,7 @@
   text-decoration: underline;
 }
 .description-service {
-  padding: 4% 0;
+  padding: 36px 8% 4% 4%;
   position: relative;
   span {
     font-weight: light;
@@ -41,7 +44,10 @@
     margin: 0;
   }
 }
-
+.row {
+  width: 100%;
+  padding: 0;
+}
 
   // .maconnerie-img{
   //   background-size: cover;
@@ -55,29 +61,37 @@
 .separation{
   clear: both;
   position: absolute;
-  margin-top :10px;
   border-radius: 1px;
   background-color: #DB874E;
+  margin-top :10px;
   }
-
+.padding-left-des {
+  padding-left: 10vw;
+}
 .sep-right {
-  width : 3px;
-  top: 0;
+  width : 4px;
+  top: 30px;
   right: 0;
   height: 100px;
-  margin-left: 250px;
 }
-// .sep-horizontal {
-//   width : 100px;
-//   top: 0;
-//   left: -46%;
-//   height: 5px;
-// }
-// .sep-centrale {
-//   width : 5px;
-//   height: 100px;
-// }
-
+.sep-horizontal {
+  width : 8vw;
+  top: 42px;
+  left: 0;
+  height: 5px;
+}
+.sep-centrale {
+  top: 36px;
+  left: 0;
+  width : 5px;
+  height: 100px;
+}
+.padding-right-img {
+  padding: 0 20px;
+}
+.padding-right-des {
+  padding: 36px 0% 4% 7%;
+}
 // .desc-voirie {
 //   margin-left: 20%;
 // }
