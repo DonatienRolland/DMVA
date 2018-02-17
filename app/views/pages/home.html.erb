@@ -1,176 +1,182 @@
 
 
-<div class="banner" style="background-image:linear-gradient(-225deg, rgba(89, 92, 93, 0.30) 0%, rgba(40, 42, 44, 0.40) 50%), url('<%= cl_image_path 'luke-besley-260249_wnqa7m' %>');">
-  <div class="banner-content">
-    <h1>DMVA <br> Travaux Publics</h1>
-    <p class="hidden-xs">Située dans l'oise, DMVA est une entreprise de travaux publics spécialisée dans les travaux de voirie, d'assainissement, de terrassement, de réseaux secs, d'eau potable, de maçonnerie industrielle et de démolition.</p>
-    <a class="btn btn-primary btn-lg">EN SAVOIR +</a>
-  </div>
-</div>
-
-
-
-<div class="actions">
-  <div class="trois-actions">
-  <div class="col-xs-12 col-sm-4 action">
-    <div class="icon-position">
-      <div class="position-left">
-        <%= cl_image_tag 'hand-shake_1_vixpdh', :width=>50 %>
-      </div>
-      <div class="position-right">
-        <h3>Rencontre client</h3>
-      </div>
-    </div>
-    <div class="text-action">
-      <div class="position-left">
-      <h2>1</h2>
-      </div>
-      <div class="position-right">
-        <p>Nous prenons contact avec vous par téléphone ou appelez-nous directement. Nous nous concertons alors avec vous pour organiser une rencontre directement sur le lieu du futur chantier.</p>
-      </div>
-    </div>
-  </div>
-  <div class="col-xs-12 col-sm-4 action">
-    <div class="icon-position">
-      <div class="position-left">
-        <%= cl_image_tag 'note_wvaruy', :height=>50 %>
-      </div>
-      <div class="position-right">
-        <h3>Chiffrage du devis</h3>
-      </div>
-    </div>
-    <div class="text-action">
-      <div class="position-left">
-        <h2>2</h2>
-      </div>
-      <div class="position-right">
-        <p>Lors du rendez-vous, nous sommes à votre écoute pour comprendre vos besoins et l'utilité des travaux. Nous étudions la meilleure solution et effectuons la prise de mesure.</p>
-      </div>
-    </div>
-  </div>
-  <div class="col-xs-12 col-sm-4 action">
-    <div class="icon-position">
-      <div class="position-left">
-        <%= cl_image_tag 'helmet_1_ke3eks', :height=>50 %>
-      </div>
-      <div class="position-right">
-        <h3>Réalisation des travaux</h3>
-      </div>
-    </div>
-    <div class="text-action">
-      <div class="position-left">
-        <h2>3</h2>
-      </div>
-      <div class="position-right">
-       <p>Enfin, moins d'une semaine après votre entretien téléphonique, nous vous fournissons un devis du montant des travaux. Lorsque vous nous le renvoyez signé, nous nous mettons au travail !</p>
-      </div>
-    </div>
-  </div>
-  </div>
-  <div class="separation-actions"><hr></div>
-</div>
-
-
-
-<div class="services-home hidden-xs">
-  <h2>Nos Services</h2>
-  <div class="service">
-    <%= cl_image_tag 'road-construction-1264789_1920_iicyja', :height=>300 %>
-    <div class="description-service">
-      <h4>Assainissement</h4>
-      <span class="more">
-        L'assainissement regroupe l'ensemble des techniques visant à traiter les eaux usées. Ce service des eaux englobe ainsi la pose de réseaux d'évacuation des eaux usées et des eaux de pluie. DMVA propose ainsi la pose de ces réseaux qu'ils soient collectifs ou non mais également la réparation de ces derniers.
-        En matière d'eaux usées, DMVA peut ainsi prendre en charge la pose de poste de refoulement, de bacs dégraisseurs ou encore de micro-stations.
-
-        En ce qui concerne les eaux pluviales, nous nous chargerons de la réalisation de vos puisards, de vos drainages, de  vos bassins et fossés ainsi que leurs curages.
-      </span>
-
-      <hr class="separation sep-right" />
-    </div>
-  </div>
-  <div class="service">
-    <div class="description-service desc-voirie">
-      <hr class="separation sep-horizontal" />
-      <h4>Voirie</h4>
-      <span class="more">
-        Notre service de voirie vous permettra de faire construire l'ensemble des voies de circulations que vous souhaitez. Qu'il s'agisse d'une autoroute, d'une route, d'une rue, d'un chemin ou même d'une entrée de parking, nous sommes prêt à la réaliser pour vous.
-
-        Ainsi nous intervenons aussi bien sur voie publique et privée et maîtrisons de multiples techniques telles que l'enrochement, le pavage, le terrassement, l'enrobé à chaud ou encore le béton lavé.
-      </span>
-    </div>
-    <%= cl_image_tag 'site-1359677_1920_ldiqfq', :height=>300 %>
-  </div>
-  <div class="service maconerie-service">
-    <div class="maconnerie-img" style="background-image:linear-gradient(-225deg, rgba(89, 92, 93, 0.30) 0%, rgba(40, 42, 44, 0.40) 50%), url('<%= cl_image_path '33733592133_63b7a2cbef_o_oalkid' %>');">
-    </div>
-    <hr class="separation sep-centrale" />
-    <div class="description-service desc-maconnerie">
-      <h4>Maçonnerie</h4>
-      <span class="more">
-      Notre service de maçonnerie vous permettra de bâtir l'ensemble des constructions que vous souhaitez ! Notre expertise en génie civil nous permet de maîtriser l'ensemble des techniques de constructions, aussi bien la pose de dalle en béton, la pose de parpaings (parpaing creux ou parpaing plein) ou encore la fabrication de murets de soutènements.
-      </span>
-      <%= link_to realisations_path, class:"link-realisation" do %>
-        <h3>Voir nos réalisations</h3>
-        <img src="assets/right-arrow.png" alt="next-realisations" style="height: 40px">
-      <% end %>
+  <div class="banner" style="background-image:linear-gradient(-225deg, rgba(89, 92, 93, 0.30) 0%, rgba(40, 42, 44, 0.40) 50%), url('<%= cl_image_path 'luke-besley-260249_wnqa7m' %>');">
+    <div class="banner-content">
+      <h1>DMVA <br> Travaux Publics</h1>
+      <p class="hidden-xs">Située dans l'oise, DMVA est une entreprise de travaux publics spécialisée dans les travaux de voirie, d'assainissement, de terrassement, de réseaux secs, d'eau potable, de maçonnerie industrielle et de démolition.</p>
+      <a class="btn btn-primary btn-lg">EN SAVOIR +</a>
     </div>
   </div>
 
-</div>
 
+<div class="container-home">
 
-<div class="brochure" style="background-image:linear-gradient(-225deg, rgba(89, 92, 93, 0.75) 95%, rgba(40, 42, 44, 0.75) 95%), url('/assets/Tracteur_profil');">
-    <div class="brochure-text">
-      <h3 class="hidden-xs"> Venez découvrir nos services, ainsi que nos réalisations dans notre brochure</h3>
-      <a href="/assets/Bulldozer.mp4" target="_blank" id='telecharger'>Télecharger <br>notre brochure</a>
-    </div>
-</div>
-
-
-
-
-<div class="accomplit">
-  <div class="bloc-accompli">
-    <div class="desc-bloc-accompli">
-      <h2>Ce que nous avons accomplit</h2>
-      <div class="chiffres-accomplit" id="counter">
-        <div class="chiffre-accomplit">
-          <div class="counter-value" data-count="2000">0</div>
-          <h4>Projets</h4>
+  <div class="actions">
+    <div class="trois-actions">
+    <div class="col-xs-12 col-sm-4 action">
+      <div class="icon-position">
+        <div class="position-left">
+          <%= cl_image_tag 'hand-shake_1_vixpdh', :width=>50 %>
         </div>
-        <div class="chiffre-accomplit">
-          <div class="counter-value" data-count="250">0</div>
-          <h4>Clients</h4>
+        <div class="position-right">
+          <h3>Rencontre client</h3>
         </div>
-        <div class="chiffre-accomplit">
-          <h2>15</h2>
-          <h4>Employés</h4>
+      </div>
+      <div class="text-action">
+        <div class="position-left">
+        <h2>1</h2>
         </div>
-        <div class="chiffre-accomplit">
-          <h2>7</h2>
-          <h4>Habilitations</h4>
-        </div>
-        <div class="chiffre-accomplit">
-          <h2>15</h2>
-          <h4>Machines</h4>
+        <div class="position-right">
+          <p>Nous prenons contact avec vous par téléphone ou appelez-nous directement. Nous nous concertons alors avec vous pour organiser une rencontre directement sur le lieu du futur chantier.</p>
         </div>
       </div>
     </div>
-    <div class="card" style="background-image: linear-gradient(rgba(219, 135, 78, 0.76), rgba(219, 135, 78, 0.76)), url(<%= cl_image_path 'workers-535533_1920_conxuq' %>);">
-      <div class="card-description">
-        <h3>40</h3>
-        <h5>Années d'expérience dans le secteur</h5>
+    <div class="col-xs-12 col-sm-4 action">
+      <div class="icon-position">
+        <div class="position-left">
+          <%= cl_image_tag 'note_wvaruy', :height=>50 %>
+        </div>
+        <div class="position-right">
+          <h3>Chiffrage du devis</h3>
+        </div>
+      </div>
+      <div class="text-action">
+        <div class="position-left">
+          <h2>2</h2>
+        </div>
+        <div class="position-right">
+          <p>Lors du rendez-vous, nous sommes à votre écoute pour comprendre vos besoins et l'utilité des travaux. Nous étudions la meilleure solution et effectuons la prise de mesure.</p>
+        </div>
       </div>
     </div>
+    <div class="col-xs-12 col-sm-4 action">
+      <div class="icon-position">
+        <div class="position-left">
+          <%= cl_image_tag 'helmet_1_ke3eks', :height=>50 %>
+        </div>
+        <div class="position-right">
+          <h3>Réalisation des travaux</h3>
+        </div>
+      </div>
+      <div class="text-action">
+        <div class="position-left">
+          <h2>3</h2>
+        </div>
+        <div class="position-right">
+         <p>Enfin, moins d'une semaine après votre entretien téléphonique, nous vous fournissons un devis du montant des travaux. Lorsque vous nous le renvoyez signé, nous nous mettons au travail !</p>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="separation-actions"><hr></div>
   </div>
+
+
+
+  <div class="row services-home">
+    <h2>Nos Services</h2>
+    <div class="service">
+      <img src="/assets/construction.jpg" alt="" class="col-xs-12 col-sm-6 picture-service">
+      <div class="description-service col-xs-12 col-sm-6">
+        <h4 class="souligne">Assainissement</h4>
+        <span class="more">
+          L'assainissement regroupe l'ensemble des techniques visant à traiter les eaux usées. Ce service des eaux englobe ainsi la pose de réseaux d'évacuation des eaux usées et des eaux de pluie. DMVA propose ainsi la pose de ces réseaux qu'ils soient collectifs ou non mais également la réparation de ces derniers.
+          En matière d'eaux usées, DMVA peut ainsi prendre en charge la pose de poste de refoulement, de bacs dégraisseurs ou encore de micro-stations.
+
+          En ce qui concerne les eaux pluviales, nous nous chargerons de la réalisation de vos puisards, de vos drainages, de  vos bassins et fossés ainsi que leurs curages.
+        </span>
+        <hr class="separation sep-right" />
+
+      </div>
+    </div>
+
+
+    <!-- <div class="service">
+      <div class="description-service desc-voirie">
+        <hr class="separation sep-horizontal" />
+        <h4>Voirie</h4>
+        <span class="more">
+          Notre service de voirie vous permettra de faire construire l'ensemble des voies de circulations que vous souhaitez. Qu'il s'agisse d'une autoroute, d'une route, d'une rue, d'un chemin ou même d'une entrée de parking, nous sommes prêt à la réaliser pour vous.
+
+          Ainsi nous intervenons aussi bien sur voie publique et privée et maîtrisons de multiples techniques telles que l'enrochement, le pavage, le terrassement, l'enrobé à chaud ou encore le béton lavé.
+        </span>
+      </div>
+      <%= cl_image_tag 'site-1359677_1920_ldiqfq', :height=>300 %>
+    </div>
+    <div class="service maconerie-service">
+      <div class="maconnerie-img" style="background-image:linear-gradient(-225deg, rgba(89, 92, 93, 0.30) 0%, rgba(40, 42, 44, 0.40) 50%), url('<%= cl_image_path '33733592133_63b7a2cbef_o_oalkid' %>');">
+      </div>
+      <hr class="separation sep-centrale" />
+      <div class="description-service desc-maconnerie">
+        <h4>Maçonnerie</h4>
+        <span class="more">
+        Notre service de maçonnerie vous permettra de bâtir l'ensemble des constructions que vous souhaitez ! Notre expertise en génie civil nous permet de maîtriser l'ensemble des techniques de constructions, aussi bien la pose de dalle en béton, la pose de parpaings (parpaing creux ou parpaing plein) ou encore la fabrication de murets de soutènements.
+        </span>
+        <%= link_to realisations_path, class:"link-realisation" do %>
+          <h3>Voir nos réalisations</h3>
+          <img src="assets/right-arrow.png" alt="next-realisations" style="height: 40px">
+        <% end %>
+      </div>
+    </div> -->
+
+  </div>
+
+
+  <div class="brochure" style="background-image:linear-gradient(-225deg, rgba(89, 92, 93, 0.75) 95%, rgba(40, 42, 44, 0.75) 95%), url('/assets/Tracteur_profil');">
+      <div class="brochure-text">
+        <h3 class="hidden-xs"> Venez découvrir nos services, ainsi que nos réalisations dans notre brochure</h3>
+        <a href="/assets/Bulldozer.mp4" target="_blank" id='telecharger'>Télecharger <br>notre brochure</a>
+      </div>
+  </div>
+
+
+
+
+  <div class="row accomplit">
+      <div class="desc-bloc-accompli col-sm-8">
+        <h2 class="hidden-xs margin-left-titre">Ce que nous avons accomplit</h2>
+        <h2 class="visible-xs size-titre">Ce que nous avons accomplit</h2>
+        <div class="chiffres-accomplit " id="counter">
+          <div class="chiffre-accomplit col-xs-12 col-sm-2">
+            <div class="counter-value" data-count="2000">0</div>
+            <h4>Projets</h4>
+          </div>
+          <div class="chiffre-accomplit col-xs-12 col-sm-2">
+            <div class="counter-value" data-count="250">0</div>
+            <h4>Clients</h4>
+          </div>
+          <div class="chiffre-accomplit col-xs-12 col-sm-2">
+            <h2>15</h2>
+            <h4>Employés</h4>
+          </div>
+          <div class="chiffre-accomplit col-xs-12 col-sm-2">
+            <h2>7</h2>
+            <h4>Habilitations</h4>
+          </div>
+          <div class="chiffre-accomplit col-xs-12 col-sm-2">
+            <h2>15</h2>
+            <h4>Machines</h4>
+          </div>
+        </div>
+      </div>
+      <div class="card col-sm-4" style="background-image: linear-gradient(rgba(219, 135, 78, 0.76), rgba(219, 135, 78, 0.76)), url(<%= cl_image_path 'workers-535533_1920_conxuq' %>);">
+        <div class="card-description">
+          <h3 class="size-h3">40</h3>
+          <h5>Années d'expérience dans le secteur</h5>
+        </div>
+      </div>
+  </div>
+
+
+
+  <div class="projets-home">
+    <h2>Actualités</h2>
+
+    <%= render 'shared/actualite-dynamique' %>
+
+
+  </div>
+
+
 </div>
 
-
-
-<div class="projets-home">
-  <h2>Actualités</h2>
-
-  <%= render 'shared/actualite-dynamique' %>
-
-
-</div>

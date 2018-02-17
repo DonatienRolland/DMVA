@@ -32,10 +32,10 @@
     <div class="dropdown">
       <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
       <ul class="dropdown-menu dropdown-menu-right navbar-dropdown-menu">
-        <li><a href="#">Accueil</a></li>
-        <li><a href="#">Realisations</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">Actualité</a></li>
+        <li><%= link_to 'Acceuil', root_path %></li>
+        <li><%= link_to 'A Propos', apropos_path %></li>
+        <li><%= link_to 'Réalisations', realisations_path %></li>
+        <li><%= link_to 'Contact', new_contact_path %></li>
       </ul>
     </div>
   </div>
