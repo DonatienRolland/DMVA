@@ -73,9 +73,9 @@
 
 
 
-  <div class="row services-home">
+  <div class=" services-home">
     <h2>Nos Services</h2>
-    <div class="service">
+    <div class="service row">
       <img src="/assets/construction.jpg" alt="" class="col-xs-12 col-sm-6 picture-service">
       <div class="description-service col-xs-12 col-sm-6">
         <h4 class="souligne">Assainissement</h4>
@@ -91,33 +91,34 @@
     </div>
 
 
-    <!-- <div class="service">
-      <div class="description-service desc-voirie">
+    <div class="service row">
+      <div class="description-service padding-left-des col-xs-12 col-sm-6">
         <hr class="separation sep-horizontal" />
-        <h4>Voirie</h4>
+        <h4 class="souligne">Voirie</h4>
         <span class="more">
           Notre service de voirie vous permettra de faire construire l'ensemble des voies de circulations que vous souhaitez. Qu'il s'agisse d'une autoroute, d'une route, d'une rue, d'un chemin ou même d'une entrée de parking, nous sommes prêt à la réaliser pour vous.
 
           Ainsi nous intervenons aussi bien sur voie publique et privée et maîtrisons de multiples techniques telles que l'enrochement, le pavage, le terrassement, l'enrobé à chaud ou encore le béton lavé.
         </span>
       </div>
-      <%= cl_image_tag 'site-1359677_1920_ldiqfq', :height=>300 %>
+      <img src="/assets/construction.jpg" alt="" class="col-xs-12 col-sm-6 picture-service">
     </div>
-    <div class="service maconerie-service">
-      <div class="maconnerie-img" style="background-image:linear-gradient(-225deg, rgba(89, 92, 93, 0.30) 0%, rgba(40, 42, 44, 0.40) 50%), url('<%= cl_image_path '33733592133_63b7a2cbef_o_oalkid' %>');">
-      </div>
-      <hr class="separation sep-centrale" />
-      <div class="description-service desc-maconnerie">
+
+
+    <div class="service row">
+      <img src="/assets/construction.jpg" alt="" class="col-xs-12 col-sm-6 picture-service padding-right-img">
+      <div class="description-service padding-right-des col-xs-12 col-sm-6">
+        <hr class="separation sep-centrale" />
         <h4>Maçonnerie</h4>
         <span class="more">
         Notre service de maçonnerie vous permettra de bâtir l'ensemble des constructions que vous souhaitez ! Notre expertise en génie civil nous permet de maîtriser l'ensemble des techniques de constructions, aussi bien la pose de dalle en béton, la pose de parpaings (parpaing creux ou parpaing plein) ou encore la fabrication de murets de soutènements.
         </span>
-        <%= link_to realisations_path, class:"link-realisation" do %>
+        <%= link_to realisations_path, class:"link-realisation hidden-xs" do %>
           <h3>Voir nos réalisations</h3>
           <img src="assets/right-arrow.png" alt="next-realisations" style="height: 40px">
         <% end %>
       </div>
-    </div> -->
+    </div>
 
   </div>
 
