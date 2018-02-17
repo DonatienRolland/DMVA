@@ -1,83 +1,31 @@
 .services-home {
   padding: 0 6%;
   margin-top: 20px;
+  position: relative;
 }
 .service {
-  display: flex;
-  justify-content: space-around;
-  img {
-    margin-right: 20px;
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
-  }
   margin: 60px 0;
   a {
-    color: $orange;
+    color: black;
     font-size: 15px;
   }
 }
-
-  .maconnerie-img{
-    background-size: cover;
-    background-position: center;
-    width: 30%;
-    height: 300px;
-  }
-
-
-
-.separation{
-  clear: both;
-  position: absolute;
-  margin-top :10px;
-  border-radius: 1px;
-  background-color: #DB874E;
-  }
-
-.sep-right {
-  width : 5px;
-  top: 0;
-  right: 0;
-  height: 100px;
-  margin-left: 250px;
+.picture-service {
+  object-fit: cover;
+  padding: 4% 0;
 }
-.sep-horizontal {
-  width : 100px;
-  top: 0;
-  left: -46%;
-  height: 5px;
+.souligne {
+  text-decoration: underline;
 }
-.sep-centrale {
-  width : 5px;
-  height: 100px;
-}
-
 .description-service {
+  padding: 4% 0;
   position: relative;
-  width: 316px;
-  p {
-    width: 75%;
-  }
   span {
-    width: 75%;
     font-weight: light;
     font-size: 13px !important;
     color: #C8C7C8;
   }
 }
-.desc-voirie {
-  margin-left: 20%;
-}
-.desc-maconnerie {
-  margin-left: 30px;
-}
-
-.services-home {
-  position: relative;
-}
-
-
-
-
 .link-realisation{
   display: flex;
   align-items: center;
@@ -93,6 +41,54 @@
     margin: 0;
   }
 }
+
+
+  // .maconnerie-img{
+  //   background-size: cover;
+  //   background-position: center;
+  //   width: 30%;
+  //   height: 300px;
+  // }
+
+
+
+.separation{
+  clear: both;
+  position: absolute;
+  margin-top :10px;
+  border-radius: 1px;
+  background-color: #DB874E;
+  }
+
+.sep-right {
+  width : 3px;
+  top: 0;
+  right: 0;
+  height: 100px;
+  margin-left: 250px;
+}
+// .sep-horizontal {
+//   width : 100px;
+//   top: 0;
+//   left: -46%;
+//   height: 5px;
+// }
+// .sep-centrale {
+//   width : 5px;
+//   height: 100px;
+// }
+
+// .desc-voirie {
+//   margin-left: 20%;
+// }
+// .desc-maconnerie {
+//   margin-left: 30px;
+// }
+
+
+
+
+
 
 
 
