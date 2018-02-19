@@ -12,7 +12,7 @@
   margin: 0;
 }
 .banner p {
-  font-size: 2vw;
+  font-size: 19px;
   font-weight: lighter;
   color: white;
   opacity: 0.8;
@@ -21,9 +21,14 @@
 }
 
 .btn-primary {
-  background-color: $brown;
+  background-color: $orange;
   border: none;
 }
+.btn-primary:hover {
+  background-color: $orange;
+  text-decoration: underline;
+}
+
 .banner-content {
   display: flex;
   flex-direction: column;

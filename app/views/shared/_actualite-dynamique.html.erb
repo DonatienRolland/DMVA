@@ -24,7 +24,48 @@
         <p>ADMIN</p>
       </div>
     </div>
-    <a href="" class="article-link"><i class="fa fa-file-text-o" aria-hidden="true" style="height: 50px"></i></a>
+
+    <label class="hero button" for="lightbox-1"></label>
+      <aside class="lightbox">
+        <input type="checkbox" class="state" id="lightbox-1" />
+        <article class="content">
+          <header class="header">
+            <label class="button" for="lightbox-1">&times;</label>
+            <div class="header-pdf">
+              <p>DÉMOLITION</p>
+              <p> <%= @articles.last.created_at.strftime("publié en %B, %Y") %></p>
+            </div>
+            <h3 class="h h3"><%= @articles.last.titre %></h3>
+          </header>
+          <main class="main">
+            <%= image_tag @articles.last.photo %>
+            <p><%= @articles.last.description %></p>
+          </main>
+          <footer class="footer-pdf">
+            <div class="fait-par">
+              <h5>THIBAULT GUILLOU</h5>
+              <p>ADMIN</p>
+            </div>
+            <label class="button btn btn-primary" for="lightbox-1">Fermer</label>
+          </footer>
+        </article>
+        <label class="backdrop" for="lightbox-1"></label>
+      </aside>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   </div>
 
   <div class="item-a-2  margin-item">
@@ -65,29 +106,26 @@
     <a href="" class="article-link"><i class="fa fa-file-text-o" aria-hidden="true" style="height: 50px"></i></a>
   </div>
 
+
+
+
   <!-- article type photo -->
 
 
   <div class="item-p-1  margin-item" style="background-image: url('<%= cl_image_path @articles.first.photo %>');">
-
-
-
     <a href="" class="article-link"><i class="fa fa-file-image-o" aria-hidden="true" style="height: 50px"></i></a>
   </div>
 
 
   <!-- article type video -->
   <div class="item-v-1  margin-item" style="background-image: url('<%= cl_image_path @articles.first.photo %>');">
-
-
-
     <a href="" class="article-link margin-top-play"><i class="fa fa-play" aria-hidden="true" style="height: 50px"></i></a>
   </div>
 
 </div>
 
 
-<div class="hidden-lg">
+<div class="hidden-lg hidden-md">
   <div class="row">
   <% @articles.each do |article|   %>
     <div class="col-xs-12 col-sm-12">
@@ -108,10 +146,37 @@
             <p>ADMIN</p>
           </div>
         </div>
+    <label class="hero button" for="lightbox-2"></label>
+      <aside class="lightbox">
+        <input type="checkbox" class="state" id="lightbox-2" />
+        <article class="content">
+          <header class="header">
+            <label class="button" for="lightbox-1">&times;</label>
+            <div class="header-pdf">
+              <p>DÉMOLITION</p>
+              <p> <%= article.created_at.strftime("publié en %B, %Y") %></p>
+            </div>
+            <h3 class="h h3"><%= article.titre %></h3>
+          </header>
+          <main class="main">
+            <%= image_tag article.photo %>
+            <p><%= article.description %></p>
+            <div class="fait-par">
+              <h5>THIBAULT GUILLOU</h5>
+              <p>ADMIN</p>
+            </div>
+          </main>
+          <footer class="footer-pdf">
+            <label class="button btn btn-primary" for="lightbox-1">Fermer</label>
+          </footer>
+        </article>
+        <label class="backdrop" for="lightbox-1"></label>
+      </aside>
       </div>
-
     </div>
   <% end %>
 
   </div>
 </div>
+
+
