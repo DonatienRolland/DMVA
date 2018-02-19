@@ -62,7 +62,7 @@
 }
 
 .realisations{
-  margin-bottom: 5%;
+  margin: 15% 0 5% 0;
   display: flex;
   flex-direction: column;
   .realisations-titres{
@@ -118,6 +118,7 @@
 //// parc materiel
 .parc_materiel{
   margin-bottom: 5%;
+  margin-top: 15%;
   display: flex;
   flex-direction: column;
 }
@@ -186,6 +187,64 @@
     color: black;
     a{
       color: #DB874E;
+    }
+  }
+}
+
+@media all and (max-width: 900px){
+  .travaillons-ensemble{
+    strong{
+      font-size: 180%;
+    }
+  }
+  .banner-realisation h1{
+    width: 100%;
+  }
+  .references{
+    margin-top: 11%;
+    height: 50%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    .references-text{
+      width: 80%;
+      h2{
+        margin-top: 0;
+        margin-bottom: 5%;
+      }
+    }
+    .references-img{
+      margin-top: 20px;
+      height: 10vh;
+      width: 80%;
+      align-self: auto;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      .references-nb{
+        margin-bottom: 0;
+        font-size: 125%;
+      }
+      p{
+        margin: 0px 1%;
+        font-size: 125%;
+      }
+    }
+  }
+  .realisations{
+    .realisations-titres{
+      padding: 0 5%;
+    }
+    .realisations-img{
+      flex-direction: column;
+      flex-wrap: nowrap;
+      .realisations-objet{
+        width: 100% !important ;
+        height: 18%;
+        .objet-plus{
+          visibility: hidden;
+        }
+      }
     }
   }
 }

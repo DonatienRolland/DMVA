@@ -55,6 +55,31 @@
   }
 }
 
+@media all and (max-width: 800px){
+  .moyen-contact{
+    flex-direction: column-reverse;
+    .form-contact{
+      width: 90%;
+      margin-top: 10%;
+      h3{
+        text-align: left;
+      }
+    }
+    .contact-dmva{
+      width: 90%;
+      .infos-dmva{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        .info-contact{
+          margin: 5% 2% 0 2%;
+          text-align: left;
+        }
+      }
+    }
+  }
+}
+
 
 .titre-contact-form {
   display: flex;
