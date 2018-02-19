@@ -50,6 +50,9 @@
     margin-top: 0;
     color: white;
   }
+  span{
+    color: white;
+  }
 }
 
 
@@ -79,13 +82,16 @@
 
 .habilitations-xs{
   margin-top : 5%;
-  background-size: cover;
-  background-position: top;
   .habilitations-text{
     padding: 5%;
+    background-size: cover;
+    background-position: top;
   }
   h3{
     margin-top: 0;
+    color: white;
+  }
+  span{
     color: white;
   }
 }
@@ -141,40 +147,46 @@
   margin: 5% 0;
 }
 
-  .member{
-    margin-left: 20px;
-    margin-right: 20px;
-    width: 230px;
-    background-color: #c8c7c8;
-    padding: 2%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+.member{
+  margin-left: 20px;
+  margin-right: 20px;
+  width: 230px;
+  background-color: #c8c7c8;
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 
-    img{
-      width: 100%;
-      margin-bottom: 15px;
-    }
-    p{
-      width: 100%;
-      color: black;
-      text-align: justify;
-    }
-    .member-description{
-      font-size: 9px;
-    }
+  img{
+    width: 100%;
+    margin-bottom: 15px;
   }
-  .member-contact{
-    display: flex;
-    justify-content: space-around;
-    a{
-      width: 15%;
-    }
+  p{
+    width: 100%;
+    color: black;
+    text-align: justify;
   }
+  .member-description{
+    font-size: 9px;
+  }
+}
+.member-contact{
+  display: flex;
+  justify-content: space-around;
+  a{
+    width: 15%;
+  }
+}
 
 @media all and (max-width: 800px){
   .banner-apropos h1{
     width: 100%;
+  }
+}
+
+@media all and (min-width: 1200px){
+  .member{
+    width: 28%;
   }
 }
