@@ -4,8 +4,8 @@
   margin: auto;
   .card {
     background-color: $orange;
-    width: 204px;
-    height: 250px;
+    width: 190px;
+    height: 200px;
     text-shadow: 0 1px 3px rgba(0,0,0,0.6);
     background-size: cover !important;
     background-position: center;
@@ -26,6 +26,7 @@
 .size-h3 {
   font-size: 90px !important;
   color: black;
+  margin: 0;
 }
 
 .card-description {
@@ -50,6 +51,11 @@
   justify-content: space-between;
   margin: auto;
   padding: 5vh 0;
+  p {
+    width: 92%;
+    margin: auto;
+    margin-bottom: 50px;
+  }
 }
 
 .chiffres-accomplit {

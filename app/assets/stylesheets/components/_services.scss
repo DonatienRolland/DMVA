@@ -10,16 +10,15 @@
   }
   a {
     color: black;
-    font-size: 15px;
+    font-size: 12px;
+    margin-top: 20px;
   }
 }
 .picture-service {
   object-fit: cover;
   padding: 4% 0;
 }
-.souligne {
-  text-decoration: underline;
-}
+
 .description-service {
   padding: 36px 8% 4% 4%;
   position: relative;
@@ -76,17 +75,17 @@
   height: 5px;
 }
 .sep-centrale {
-  top: 36px;
+  top: 0px;
   left: 0;
   width : 5px;
   height: 100px;
 }
 .padding-right-img {
-  padding: 0 20px;
+  padding: 10px 20px 0px 0px;
 }
 
 .padding-right-des {
-  padding: 36px 0% 4% 7%;
+  padding: 0px 0% 4% 7%;
 }
 // .desc-voirie {
 //   margin-left: 20%;
