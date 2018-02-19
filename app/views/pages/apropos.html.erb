@@ -3,67 +3,65 @@
     <h1>À Propos</h1>
 </div>
 
-<div class="business-description hidden-xs hidden-sm hidden-md">
-  <hr>
-  <div class="business-text">
-    <h3>L'entreprise</h3>
-    <span class="more">Située dans l'<strong>oise</strong> , DMVA est une entreprise de <strong>travaux publics</strong> spécialisée dans les travaux de <strong>voirie</strong>, d'<strong>assainissement</strong>, de <strong>terrassement</strong>, de <strong>réseaux secs</strong>, d'eau potable, de <strong>maçonnerie industrielle</strong> et de <strong>démolition</strong>.</span>
-  </div>
-  <img class="image-entreprise" src="/assets/Travail_sur_chantier.jpg" alt="ouvriers travaillant sur chantier">
-</div>
+<div class="container-home">
 
-<div class="business-description-xs hidden-lg">
-  <div class="business-text" style="background-image:linear-gradient(-225deg, rgba(89, 92, 93, 0.9) 0%, rgba(40, 42, 44, 0.9) 95%), url('/assets/Travail_sur_chantier.jpg');">
-    <h3>L'entreprise</h3>
-    <span class="more">Située dans l'oise, DMVA est une entreprise de travaux publics spécialisée dans les travaux de voirie, d'assainissement, de terrassement, de réseaux secs, d'eau potable, de maçonnerie industrielle et de démolition.</span>
-  </div>
-</div>
-
-<div class="habilitations hidden-xs hidden-sm hidden-md">
-  <img src="/assets/Ouvrier_a_genoux">
-  <hr>
-  <div class="habilitations-text">
-    <h3>Habilitations</h3>
-    <span class="more">Nam sole orto magnitudine angusti gurgitis sed profundi a transitu arcebantur et dum piscatorios quaerunt lenunculos vel innare temere contextis cratibus parant.</span>
-  </div>
-</div>
-
-<div class="habilitations-xs hidden-lg">
-  <div class="habilitations-text" style="background-image:linear-gradient(-225deg, rgba(89, 92, 93, 0.9) 0%, rgba(40, 42, 44, 0.9) 95%), url('/assets/Ouvrier_a_genoux');">
-    <h3>Habilitations</h3>
-    <span class="more">Nam sole orto magnitudine angusti gurgitis sed profundi a transitu arcebantur et dum piscatorios quaerunt lenunculos vel innare temere contextis cratibus parant.</span>
-  </div>
-</div>
-
-
-<div class="infrastructures hidden-xs hidden-sm" style="background-image:linear-gradient(-225deg, rgba(89, 92, 93, 0.75) 0%, rgba(40, 42, 44, 0.75) 95%), url('/assets/Tracteur_profil');">
-    <img src="/assets/DMVA - logo blanc-02.png">
-    <div class="infrastructures-text">
-      <p>Découvrez l'ensemble de nos infrastructures</p>
-      <a href="/assets/Bulldozer.mp4" target="_blank">Voir la vidéo ></a>
+    <div class=" services-home">
+    <h2>Nos Services</h2>
+    <div class="service row">
+      <div class="description-service padding-left-des col-xs-12 col-sm-6">
+        <hr class="separation sep-horizontal" />
+        <h4 class="souligne">L'entreprise</h4>
+        <span class="more">
+          Située dans l'oise, DMVA est une entreprise de travaux publics spécialisée dans les travaux de voirie, d'assainissement, de terrassement, de réseaux secs, d'eau potable, de maçonnerie industrielle et de démolition.
+        </span>
+      </div>
+      <img src="/assets/Travail_sur_chantier.jpg" alt="" class="col-xs-12 col-sm-6 picture-service">
     </div>
-</div>
 
-<div class="infrastructures-xs hidden-lg hidden-md" style="background-image:linear-gradient(-225deg, rgba(89, 92, 93, 0.75) 0%, rgba(40, 42, 44, 0.75) 95%), url('/assets/Tracteur_profil');">
-    <div class="infrastructures-text">
-      <p>Découvrez l'ensemble de nos infrastructures</p>
-      <a href="/assets/Bulldozer.mp4" target="_blank">Voir la vidéo ></a>
+
+    <div class="service row inverse-flex">
+      <img src="/assets/Ouvrier_a_genoux" alt="" class="col-xs-12 col-sm-6 picture-service padding-right-img">
+      <div class="description-service padding-right-des col-xs-12 col-sm-6">
+        <hr class="separation sep-centrale" />
+        <h4>Nos habilitations</h4>
+        <span class="more">
+        Nam sole orto magnitudine angusti gurgitis sed profundi a transitu arcebantur et dum piscatorios quaerunt lenunculos vel innare temere contextis cratibus parant.
+        </span>
+      </div>
     </div>
-</div>
+
+  </div>
+
+
+      <div class="infrastructures hidden-xs hidden-sm" style="background-image:linear-gradient(-225deg, rgba(89, 92, 93, 0.75) 0%, rgba(40, 42, 44, 0.75) 95%), url('/assets/Tracteur_profil');">
+        <img src="/assets/DMVA - logo blanc-02.png">
+        <div class="infrastructures-text">
+          <p>Découvrez l'ensemble de nos infrastructures</p>
+          <a href="/assets/Bulldozer.mp4" target="_blank">Voir la vidéo ></a>
+        </div>
+    </div>
+
+    <div class="infrastructures-xs hidden-lg hidden-md" style="background-image:linear-gradient(-225deg, rgba(89, 92, 93, 0.75) 0%, rgba(40, 42, 44, 0.75) 95%), url('/assets/Tracteur_profil');">
+        <div class="infrastructures-text">
+          <p>Découvrez l'ensemble de nos infrastructures</p>
+          <a href="/assets/Bulldozer.mp4" target="_blank">Voir la vidéo ></a>
+        </div>
+    </div>
 
 
 
 
-<div class="lequipe">
-  <h2>Notre Equipe</h2>
+    <div class="lequipe">
+      <h2>Notre Equipe</h2>
 
 
-    <%= render 'shared/team' %>
+        <%= render 'shared/team' %>
 
 
-</div>
+    </div>
 
-<div class="travaillons-ensemble">
-  <p>Vous souhaitez faire appel à nous ?</p>
-  <p><strong>Alors <%= link_to 'travaillons-ensemble', new_contact_path %></strong></p>
+  <div class="travaillons-ensemble">
+    <p>Vous souhaitez faire appel à nous ?</p>
+    <p><strong>Alors <%= link_to 'travaillons-ensemble', new_contact_path %></strong></p>
+  </div>
 </div>
