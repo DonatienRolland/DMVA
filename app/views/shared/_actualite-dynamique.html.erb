@@ -6,22 +6,112 @@
     <%= link_to 'Assainissement', root_path %> -->
   </div>
 
-<div class="projets hidden-xs">
-  <div class="article-two-column-one-row article-row">
-    <%= image_tag @articles.first.photo, class:"article-image width-image-50" %>
-    <div class="description-article description-article-width-50">
-      <%= @articles.first.titre %>
-      <img src="assets/file.png" alt="" style="height:25px">
-      <a href="" class="article-link"></a>
+<div class="projets hidden-xs hidden-sm ">
+  <!-- article type document -->
+  <div class="item-a-1 margin-item">
+    <%= image_tag @articles.last.photo, class:"article-image width-image-50" %>
+    <div class="description-article">
+      <div class="carateristique">
+        <p>DÉMOLITION</p>
+        <img src="assets/file.png" alt="" style="height:20px">
+      </div>
+      <div class="titre-et-date">
+        <h4 class="souligne"><%= @articles.last.titre %></h4>
+        <p> <%= @articles.last.created_at.strftime("publié en %B, %Y") %></p>
+      </div>
+      <div class="fait-par">
+        <h5>THIBAULT GUILLOU</h5>
+        <p>ADMIN</p>
+      </div>
     </div>
+    <a href="" class="article-link"><i class="fa fa-file-text-o" aria-hidden="true" style="height: 50px"></i></a>
+  </div>
+
+  <div class="item-a-2  margin-item">
+    <div class="description-article">
+      <div class="carateristique">
+        <p>DÉMOLITION</p>
+        <img src="assets/file.png" alt="" style="height:20px">
+      </div>
+      <div class="titre-et-date">
+        <h4><%= @articles.first.titre %></h4>
+        <p> <%= @articles.first.created_at.strftime("publié en %B, %Y") %></p>
+      </div>
+      <div class="fait-par">
+        <h5>THIBAULT GUILLOU</h5>
+        <p>ADMIN</p>
+      </div>
+    </div>
+    <%= image_tag @articles.first.photo, class:"width-image-100 height-image-50" %>
+    <a href="" class="hover-article"></a>
+  </div>
+
+  <div class="item-a-3  margin-item">
+    <%= image_tag @articles.second.photo, class:"article-image width-image-50" %>
+    <div class="description-article">
+      <div class="carateristique">
+        <p>DÉMOLITION</p>
+        <img src="assets/file.png" alt="" style="height:20px">
+      </div>
+      <div class="titre-et-date">
+        <h4 class="souligne"><%= @articles.second.titre %></h4>
+        <p> <%= @articles.second.created_at.strftime("publié en %B, %Y") %></p>
+      </div>
+      <div class="fait-par">
+        <h5>THIBAULT GUILLOU</h5>
+        <p>ADMIN</p>
+      </div>
+    </div>
+    <a href="" class="article-link"><i class="fa fa-file-text-o" aria-hidden="true" style="height: 50px"></i></a>
+  </div>
+
+  <!-- article type photo -->
+
+
+  <div class="item-p-1  margin-item" style="background-image: url('<%= cl_image_path @articles.first.photo %>');">
+
+
+
+    <a href="" class="article-link"><i class="fa fa-file-image-o" aria-hidden="true" style="height: 50px"></i></a>
   </div>
 
 
+  <!-- article type video -->
+  <div class="item-v-1  margin-item" style="background-image: url('<%= cl_image_path @articles.first.photo %>');">
+
+
+
+    <a href="" class="article-link margin-top-play"><i class="fa fa-play" aria-hidden="true" style="height: 50px"></i></a>
+  </div>
+
 </div>
 
-<div class="hidden-sm hidden-lg">
-  <% @articles.each do |article|   %>
 
+<div class="hidden-lg">
+  <div class="row">
+  <% @articles.each do |article|   %>
+    <div class="col-xs-12 col-sm-12">
+      <div class="item-r margin-item">
+        <div class="picture-responsive-artcile" style="background-image: url('<%= cl_image_path article.photo %>');">
+        </div>
+        <div class="description-article">
+          <div class="carateristique">
+            <p>DÉMOLITION</p>
+            <img src="assets/file.png" alt="" style="height:20px">
+          </div>
+          <div class="titre-et-date">
+            <h4 class="souligne"><%= article.titre %></h4>
+            <p> <%= article.created_at.strftime("publié en %B, %Y") %></p>
+          </div>
+          <div class="fait-par">
+            <h5>THIBAULT GUILLOU</h5>
+            <p>ADMIN</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
   <% end %>
 
+  </div>
 </div>

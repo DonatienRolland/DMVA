@@ -30,6 +30,7 @@ gem "geocoder"
 # gem 'rails_12factor', group: :production
 # download images from asset to heroku
 
+gem 'owlcarousel-rails'
 
 gem 'mail_form', '~> 1.5', '>= 1.5.1'
 # gem 'sendgrid-ruby'
