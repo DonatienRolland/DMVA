@@ -52,6 +52,12 @@
     }
   }
     .carousel-indicators {
-      bottom: -13px;
+      bottom: -60px;
+      li{
+        border: 1px solid #DB874E;
+      }
+      .active{
+        background-color: #DB874E;
+      }
     }
 

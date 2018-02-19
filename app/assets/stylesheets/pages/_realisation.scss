@@ -1,20 +1,3 @@
-.banner-realisation {
-  color: white;
-  height: 40vh;
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  align-items: flex-end;
-  h1 {
-    display: flex;
-    width: 40%;
-    height: 50%;
-    align-items: center;
-    justify-content: space-around;
-    font-size: 50px;
-  }
-}
-
 .references{
   margin-top: 5%;
   margin-bottom: 5%;
@@ -181,7 +164,7 @@
 }
 
 .travaillons-ensemble{
-  margin-bottom: 5%;
+  margin: 20% 0 10% 0;
   strong{
     font-size: 2em;
     color: black;
@@ -197,9 +180,7 @@
       font-size: 180%;
     }
   }
-  .banner-realisation h1{
-    width: 100%;
-  }
+
   .references{
     margin-top: 11%;
     height: 50%;

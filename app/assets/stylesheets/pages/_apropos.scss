@@ -1,6 +1,6 @@
 .banner-apropos {
   color: white;
-  height: 40vh;
+  height: 30vh;
   background-size: cover;
   background-position: center;
   display: flex;
@@ -11,96 +11,15 @@
     height: 50%;
     align-items: center;
     justify-content: space-around;
-    font-size: 50px;
-  }
-}
-
-.business-description{
-  margin-top : 5%;
-  display: flex;
-  justify-content: space-between;
-  padding: 0 5%;
-  hr {
-    width: 100px;
-    height: 5px;
-    border-radius: 1px;
-    background-color: #DB874E;
-    margin: 25px 0px;
-  }
-  .business-text{
-  width: 245px;
-  margin-left: -10%;
-  strong{
-    font-weight: normal;
-  }
-  }
-  .image-entreprise{
-  height: 38vh;
-  }
-}
-
-.business-description-xs{
-  margin-top : 5%;
-  background-size: cover;
-  background-position: top;
-  .business-text{
-    padding: 5%;
-  }
-  h3{
-    margin-top: 0;
-    color: white;
-  }
-  span{
-    color: white;
-  }
-}
-
-
-.habilitations{
-  margin-top : 5%;
-  display: flex;
-  justify-content: space-between;
-  padding: 0 5%;
-  hr {
-    width: 5px;
-    top: 0;
-    left: -46%;
-    height: 100px;
-    clear: both;
-    margin-top: 10px;
-    border-radius: 1px;
-    background-color: #DB874E;
-    margin: 10px;
-  }
-  img{
-    height: 38vh;
-  }
-  .habilitations-text{
-  width: 500px;
-  }
-}
-
-.habilitations-xs{
-  margin-top : 5%;
-  .habilitations-text{
-    padding: 5%;
-    background-size: cover;
-    background-position: top;
-  }
-  h3{
-    margin-top: 0;
-    color: white;
-  }
-  span{
-    color: white;
+    font-size: 40px;
   }
 }
 
 
 .infrastructures {
-  margin: 5% -3% 0 -3%;
+  margin: 15% -9% 15% -9%;
   padding: 0 5%;
-  height: 40vh;
+  height: 20vh;
   background-size: cover;
   background-position: top;
   display: flex;
@@ -123,9 +42,9 @@
 }
 
 .infrastructures-xs {
-  margin: 5% -3% 0 -3%;
+  margin: 15% -9% 15% -9%;
   padding: 0 20%;
-  height: 40vh;
+  height: 20vh;
   background-size: cover;
   background-position: top;
   display: flex;
@@ -135,7 +54,7 @@
     width: 100%;
   }
   p{
-    font-size: 1.5em;
+    font-size: 1.2em;
     color: white;
   }
   a{
@@ -145,6 +64,9 @@
 
 .lequipe{
   margin: 5% 0;
+  h2{
+    margin-bottom: 10%;
+  }
 }
 
 .member{
@@ -158,8 +80,11 @@
   justify-content: space-between;
   align-items: center;
 
-  img{
+  .portrait_membre{
     width: 100%;
+    height: 210px;
+    background-size: cover;
+    background-position: center;
     margin-bottom: 15px;
   }
   p{
@@ -176,6 +101,9 @@
   justify-content: space-around;
   a{
     width: 15%;
+    img{
+      width: 100%;
+    }
   }
 }
 
@@ -188,5 +116,11 @@
 @media all and (min-width: 1200px){
   .member{
     width: 28%;
+  }
+}
+
+@media all and (max-width: 1200px){
+  .member{
+    padding: 5%;
   }
 }
