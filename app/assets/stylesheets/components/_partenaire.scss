@@ -16,12 +16,15 @@
 }
 
 .nospartenaires {
-  display: flex;
   margin: 3% auto;
-  justify-content: space-between;
   width: 70%;
   img {
-    height: 60px
+    height: 60px;
+  }
+  div{
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
   }
 }
 .carousel-client {
