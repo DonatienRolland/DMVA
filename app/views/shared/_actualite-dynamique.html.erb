@@ -16,7 +16,7 @@
         <img src="assets/file.png" alt="" style="height:20px">
       </div>
       <div class="titre-et-date">
-        <h4 class="souligne"><%= @articles.last.titre %></h4>
+        <h4><%= @articles.last.titre %></h4>
         <p> <%= @articles.last.created_at.strftime("publié en %B, %Y") %></p>
       </div>
       <div class="fait-par">
@@ -24,6 +24,8 @@
         <p>ADMIN</p>
       </div>
     </div>
+
+
 
     <label class="hero button" for="lightbox-1"></label>
       <aside class="lightbox">
@@ -40,32 +42,17 @@
           <main class="main">
             <%= image_tag @articles.last.photo %>
             <p><%= @articles.last.description %></p>
-          </main>
-          <footer class="footer-pdf">
             <div class="fait-par">
               <h5>THIBAULT GUILLOU</h5>
               <p>ADMIN</p>
             </div>
+          </main>
+          <footer class="footer-pdf">
             <label class="button btn btn-primary" for="lightbox-1">Fermer</label>
           </footer>
         </article>
         <label class="backdrop" for="lightbox-1"></label>
       </aside>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   </div>
 
   <div class="item-a-2  margin-item">
@@ -84,7 +71,6 @@
       </div>
     </div>
     <%= image_tag @articles.first.photo, class:"width-image-100 height-image-50" %>
-    <a href="" class="hover-article"></a>
   </div>
 
   <div class="item-a-3  margin-item">
@@ -95,7 +81,7 @@
         <img src="assets/file.png" alt="" style="height:20px">
       </div>
       <div class="titre-et-date">
-        <h4 class="souligne"><%= @articles.second.titre %></h4>
+        <h4><%= @articles.second.titre %></h4>
         <p> <%= @articles.second.created_at.strftime("publié en %B, %Y") %></p>
       </div>
       <div class="fait-par">
@@ -103,7 +89,6 @@
         <p>ADMIN</p>
       </div>
     </div>
-    <a href="" class="article-link"><i class="fa fa-file-text-o" aria-hidden="true" style="height: 50px"></i></a>
   </div>
 
 
@@ -113,14 +98,55 @@
 
 
   <div class="item-p-1  margin-item" style="background-image: url('<%= cl_image_path @articles.first.photo %>');">
-    <a href="" class="article-link"><i class="fa fa-file-image-o" aria-hidden="true" style="height: 50px"></i></a>
   </div>
 
 
   <!-- article type video -->
   <div class="item-v-1  margin-item" style="background-image: url('<%= cl_image_path @articles.first.photo %>');">
-    <a href="" class="article-link margin-top-play"><i class="fa fa-play" aria-hidden="true" style="height: 50px"></i></a>
+  <label class="hero3 button" for="lightbox-3">
+    <div class="opacity-hover-video">
+      <div class="carateristique">
+        <p>DÉMOLITION</p>
+        <img src="assets/file.png" alt="" style="height:20px">
+      </div>
+      <div class="titre-et-date">
+        <h4><%= @articles.first.titre %></h4>
+        <p> <%= @articles.first.created_at.strftime("publié en %B, %Y") %></p>
+      </div>
+      <div class="fait-par">
+        <h5>THIBAULT GUILLOU</h5>
+        <p>ADMIN</p>
+      </div>
+    </div>
+  </label>
+    <aside class="lightbox">
+      <input type="checkbox" class="state" id="lightbox-3" />
+      <article class="content">
+        <header class="header">
+          <label class="button" for="lightbox-3">&times;</label>
+          <div class="header-pdf">
+            <p>DÉMOLITION</p>
+            <p> <%= @articles.first.created_at.strftime("publié en %B, %Y") %></p>
+          </div>
+          <h3 class="h h3"><%= @articles.first.titre %></h3>
+        </header>
+        <main class="main">
+          <%= image_tag @articles.first.photo %>
+          <p><%= @articles.first.description %></p>
+          <div class="fait-par">
+            <h5>THIBAULT GUILLOU</h5>
+            <p>ADMIN</p>
+          </div>
+        </main>
+        <footer class="footer-pdf">
+          <label class="button btn btn-primary" for="lightbox-3">Fermer</label>
+        </footer>
+      </article>
+      <label class="backdrop" for="lightbox-3"></label>
+    </aside>
   </div>
+
+
 
 </div>
 
@@ -138,7 +164,7 @@
             <img src="assets/file.png" alt="" style="height:20px">
           </div>
           <div class="titre-et-date">
-            <h4 class="souligne"><%= article.titre %></h4>
+            <h4><%= article.titre %></h4>
             <p> <%= article.created_at.strftime("publié en %B, %Y") %></p>
           </div>
           <div class="fait-par">
@@ -151,7 +177,7 @@
         <input type="checkbox" class="state" id="lightbox-2" />
         <article class="content">
           <header class="header">
-            <label class="button" for="lightbox-1">&times;</label>
+            <label class="button exit-top" for="lightbox-2">&times;</label>
             <div class="header-pdf">
               <p>DÉMOLITION</p>
               <p> <%= article.created_at.strftime("publié en %B, %Y") %></p>
@@ -167,10 +193,10 @@
             </div>
           </main>
           <footer class="footer-pdf">
-            <label class="button btn btn-primary" for="lightbox-1">Fermer</label>
+            <label class="button btn btn-primary" for="lightbox-2">Fermer</label>
           </footer>
         </article>
-        <label class="backdrop" for="lightbox-1"></label>
+        <label class="backdrop" for="lightbox-2"></label>
       </aside>
       </div>
     </div>
