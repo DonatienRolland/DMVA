@@ -1,7 +1,7 @@
 .references{
   margin-top: 5%;
   margin-bottom: 5%;
-  height: 50vh;
+  height: 30vh;
   display: flex;
   justify-content: space-evenly;
   hr {
@@ -20,12 +20,13 @@
     display: flex;
     flex-direction: column;
     h2{
+      margin-top: 0;
       margin-bottom: 8%;
     }
   }
   .references-img{
     width: 13%;
-    height: 90%;
+    height: 30vh;
     padding: 2%;
     background-size: cover;
     background-position: center;
@@ -45,7 +46,7 @@
 }
 
 .realisations{
-  margin: 15% 0 5% 0;
+  margin: 10% 0 5% 0;
   display: flex;
   flex-direction: column;
   .realisations-titres{
@@ -84,11 +85,15 @@
           color: white;
         }
         .objet-plus{
-          padding-bottom: 55px;
+          margin-top: -35px;
           font-size: 5em;
           font-weight: bold;
           align-self: flex-end;
           flex-grow: 1;
+        }
+        .realisations-img-titre{
+          font-weight: bold;
+          font-size: 1.1em;
         }
       }
       .hover-effect:hover{
@@ -106,14 +111,14 @@
   flex-direction: column;
 }
 .parc_materiel-titre{
-  margin-bottom: 2%;
+  margin-bottom: 5%;
   display: flex;
   justify-content: space-between;
   h2{
     margin:0 0 0 5%;
   }
   div{
-    width: 30%;
+    width: 45%;
     margin-right: 6%;
     display: flex;
     justify-content: space-between;
@@ -134,13 +139,12 @@
   div{
     background-size: cover;
     background-position: center;
-    height: 60vh;
+    height: 50vh;
   }
   .hover-effect:hover{
       opacity: 1;
   }
 }
-
 
 
 
@@ -212,6 +216,7 @@
       }
     }
   }
+
   .realisations{
     .realisations-titres{
       padding: 0 5%;
@@ -222,10 +227,27 @@
       .realisations-objet{
         width: 100% !important ;
         height: 18%;
-        .objet-plus{
-          visibility: hidden;
+        .hover-effect{
+          padding: 2%;
+          opacity: 1;
+          .objet-plus{
+            visibility: hidden;
+          }
         }
       }
     }
   }
+
+  .parc_materiel-carousel{
+    div{
+      height: 40vh;
+    }
+    .hover-effect{
+      opacity: 1;
+    }
+  }
+}
+
+@media all and (max-width: 1200px){
+
 }
