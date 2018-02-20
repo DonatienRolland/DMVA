@@ -1,4 +1,5 @@
 .footer {
+  padding: 4% 5% 1% 5%;
   width: 100%;
   margin-top: 4%;
   background-color: #2a2a2a;
@@ -8,11 +9,46 @@
   justify-content: space-between;
   color: $orange;
   flex-direction: column;
-  justify-content: space-between;
+  a {
+    color: $light-gray;
+    text-decoration: none;
+  }
+  a:hover {
+    color: $orange;
+  }
+  h4 {
+    color: white;
+  }
 }
+.footer-adresse {
+  margin: 7% 0;
+  p {
+    margin: 0;
+  }
+}
+.link-page {
+  margin-top: 12%;
+  p {
+    margin: 0;
+  }
+}
+.telephone-footer {
+  margin: 7% 0;
+  p {
+    margin: 0;
+  }
+}
+.titre-top-footer {
+  hr {
+    height: 5px;
+    margin: 0;
+  }
+}
+
 .footer-links {
   display: flex;
   align-items: center;
+  padding: 0;
 }
 .footer-links a {
   color: #DB874E;
@@ -29,6 +65,9 @@
 }
 .footer-bas {
   width: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 11px;
 }
 .footer-contact {
   display: flex;
@@ -37,8 +76,14 @@
 }
 .footer-content {
   width: 100%;
+  flex: 0 0 37vh;
+
 }
 
+
 .footer-copyright{
-  font-size: 14px;
+  font-size: 11px;
+  a {
+    color: $orange;
+  }
 }
