@@ -237,7 +237,9 @@
       }
     }
   }
+}
 
+@media all and (max-width: 1100px){
   .parc_materiel-carousel{
     div{
       height: 40vh;
@@ -246,8 +248,4 @@
       opacity: 1;
     }
   }
-}
-
-@media all and (max-width: 1200px){
-
 }
