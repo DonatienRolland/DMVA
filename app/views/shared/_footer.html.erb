@@ -13,18 +13,25 @@
       </div>
     </div>
     <div class="footer-dmva col-xs-12 col-sm-4 hidden-xs hidden-sm">
-      <h4>DMVA</h4>
-      <a href=""><p>Nos services</p></a>
-      <a href=""><p>Nos projets</p></a>
-      <a href=""><p>Notre actualité</p></a>
-      <a href=""><p>Nos réalisations</p></a>
-      <a href=""><p>Nous contacter</p></a>
-      <a href=""><p>Notre matériel</p></a>
-      <a href=""><p>Nos infrastructures</p></a>
-      <a href=""><p>Notre histoire</p></a>
+      <div class="titre-top-footer">
+        <hr>
+        <h4>DMVA</h4>
+      </div>
+      <div class="link-page">
+        <p><%= link_to 'Nos Services', root_path(anchor: "services") %></p>
+        <p><%= link_to 'Notre actualité', root_path(anchor: "actualite") %></p>
+        <p><%= link_to 'Nos infrastructures', apropos_path(anchor: "infrastructure") %></p>
+        <p><%= link_to 'Nos habilitation', apropos_path(anchor: "habilitation") %></p>
+        <p><%= link_to 'Nos réalisations', realisations_path(anchor: "realisation") %></p>
+        <p><%= link_to 'Notre matériel', realisations_path(anchor: "materiel") %></p>
+        <p><%= link_to 'Nous contacter', new_contact_path(anchor: "contact") %></p>
+      </div>
     </div>
     <div class="footer-informations col-xs-12 col-sm-4">
-      <h4>INFORMATIONS</h4>
+      <div class="titre-top-footer">
+        <hr>
+        <h4>INFORMATIONS</h4>
+      </div>
       <p>Située dans l'oise, DMVA est une entreprise de travaux publics spécialisée dans les travaux de voirie, d'assainissement, de terrassement, de réseaux secs, d'eau potable, de maçonnerie industrielle et de démolition.</p>
       <h5>Lundi - Vendredi: 08:00 - 17:00</h5>
       <h5>Samedi & Dimanche: fermé</h5>
@@ -38,10 +45,11 @@
       <a href="#"><i class="fa fa-linkedin"></i></a>
     </div>
     <div class="footer-copyright col-xs-12 col-sm-4">
-      This website is made with <i class="fa fa-heart"></i> by Avem-Creation
+      <a href="http://www.avemcreation.com/" target="_blank">
+      Ce site a été fait avec <i class="fa fa-heart"></i> par Avem-Creation</a>
     </div>
     <div class="back-up col-xs-12 col-sm-4">
-      <%= link_to 'Retour en haut' %>
+      <%= link_to 'Retour en haut' %><i class="fa fa-level-up" aria-hidden="true"></i>
     </div>
   </div>
 </div>
