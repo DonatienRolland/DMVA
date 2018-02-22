@@ -1,5 +1,7 @@
 class Article < ApplicationRecord
-  validates :titre, presence: true
+  belongs_to :user, optional: true
+
+  # validates :titre, presence: true
   # validates :photo, presence: true
   validates :description, presence: true
 

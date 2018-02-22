@@ -32,6 +32,11 @@ gem "geocoder"
 
 gem 'owlcarousel-rails'
 
+gem 'devise'
+
+
+gem 'activeadmin'
+
 gem 'mail_form', '~> 1.5', '>= 1.5.1'
 # gem 'sendgrid-ruby'
 # makes navigating your web application faste
