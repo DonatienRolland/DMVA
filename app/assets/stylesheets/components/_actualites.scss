@@ -38,6 +38,14 @@
 //   right: 0px;
 //   bottom: 0px;
 // }
+
+.item-description{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 5%;
+}
 .titre-et-date{
   h4:hover{
     text-decoration: underline;
@@ -150,16 +158,7 @@
   transform: translate3d(0, 0, 0);
   cursor: pointer;
 }
-.hero3{
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 0;
-  transform: translate3d(0, 0, 0);
-  cursor: pointer;
-}
+
 
 
 .state{
