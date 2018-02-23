@@ -11,7 +11,7 @@ if (accomplit) {
         });
       handler.bounds.extendWith(markers);
       handler.fitMapToBounds();
-      handler.getMap().setZoom(15);
+      handler.getMap().setZoom(13);
     })
   })
 
