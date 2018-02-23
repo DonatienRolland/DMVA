@@ -1,7 +1,13 @@
 <div class="navbar">
   <!-- Logo -->
-  <%= link_to root_path do %>
-    <%= cl_image_tag "DMVA---logo-transparent_ei3lvs", :height=>50 %>
+  <% if user_signed_in? %>
+    <%= link_to admin_dashboard_path do %>
+      <%= cl_image_tag "DMVA---logo-transparent_ei3lvs", :height=>50 %>
+    <% end %>
+  <% else %>
+    <%= link_to root_path do %>
+      <%= cl_image_tag "DMVA---logo-transparent_ei3lvs", :height=>50 %>
+    <% end %>
   <% end %>
 
   <!-- Right Navigation -->

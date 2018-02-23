@@ -8,4 +8,9 @@ class User < ApplicationRecord
   validates :email, uniqueness: true
 
   has_many :articles
+
+  def name
+    "#{prenom} #{nom.upcase}"
+  end
+
 end
