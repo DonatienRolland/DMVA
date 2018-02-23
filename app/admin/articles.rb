@@ -1,5 +1,5 @@
 ActiveAdmin.register Article do
-  permit_params :name, :description, :photo
+  permit_params :titre, :description, :photo
 # See permitted parameters documentation:
 # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
 #
