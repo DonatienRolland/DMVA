@@ -225,6 +225,9 @@
   }
   .header{
     padding-bottom: 10px;
+    .header-pdf p{
+      color: #C8C7C8 !important;
+    }
   }
 
   .main{
@@ -232,7 +235,17 @@
     overflow: scroll;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     align-items: center;
+    .grid-realisations{
+      height: 40%;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+    }
+    p{
+    color: #C8C7C8 !important;
+    }
     .fait-par {
       align-self: flex-end;
     }
