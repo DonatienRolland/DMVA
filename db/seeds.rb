@@ -3,7 +3,7 @@ User.destroy_all
 puts 'All articles & users destroy'
 
 
-donatien = User.create!(email:"donatien@hotmail.fr", password:"password", admin: true)
+donatien = User.create!(email:"donatien@hotmail.fr", password:"password", admin: true, nom:"Rolland", prenom:"Donatien")
 puts "Donatien created"
 
 puts "Creating Articles"
