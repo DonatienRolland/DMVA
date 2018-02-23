@@ -69,6 +69,7 @@
     justify-content: space-between;
     flex-wrap: wrap;
     .realisations-objet{
+      position: relative;
       background-size: cover;
       background-position: center;
       height: 46%;
@@ -87,7 +88,7 @@
         .objet-plus{
           margin-top: -35px;
           font-size: 5em;
-          font-weight: bold;
+          font-weight: normal;
           align-self: flex-end;
           flex-grow: 1;
         }
@@ -249,3 +250,4 @@
     }
   }
 }
+
