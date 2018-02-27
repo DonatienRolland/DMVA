@@ -137,13 +137,14 @@
 .parc_materiel-carousel{
   width: calc(100vw - 20%);
   margin: auto;
-  div{
+  .item{
     background-size: cover;
     background-position: center;
     height: 50vh;
+    width: 100%;
   }
   .hover-effect:hover{
-      opacity: 1;
+    opacity: 1;
   }
 }
 
@@ -163,10 +164,7 @@
     color: black;
   }
 }
-.vehicule-name{
-  font-size: 24px;
-  font-weight: bold;
-}
+
 
 .travaillons-ensemble{
   margin: 10% 0 10% 0;
@@ -250,4 +248,25 @@
     }
   }
 }
+//// Carousel part
+
+
+.materiel-item {
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 

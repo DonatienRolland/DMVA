@@ -27,10 +27,11 @@ gem 'carrierwave', '~> 0.11.2'
 
 gem "geocoder"
 
+
 # gem 'rails_12factor', group: :production
 # download images from asset to heroku
 
-gem 'owlcarousel-rails'
+
 
 gem 'devise'
 
