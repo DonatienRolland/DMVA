@@ -81,13 +81,13 @@
             <label class="button" for="lightbox-2">&times;</label>
             <div class="header-pdf">
               <p>DÉMOLITION</p>
-              <p> <%= @articles.last.created_at.strftime("publié en %B, %Y") %></p>
+              <p> <%= @articles.first.created_at.strftime("publié en %B, %Y") %></p>
             </div>
-            <h3 class="h h3"><%= @articles.last.titre %></h3>
+            <h3 class="h h3"><%= @articles.first.titre %></h3>
           </header>
           <main class="main">
-            <%= image_tag @articles.last.photo %>
-            <p><%= @articles.last.description %></p>
+            <%= image_tag @articles.first.photo %>
+            <p><%= @articles.first.description %></p>
             <div class="fait-par">
               <h5>THIBAULT GUILLOU</h5>
               <p>ADMIN</p>
@@ -125,13 +125,13 @@
               <label class="button" for="lightbox-3">&times;</label>
               <div class="header-pdf">
                 <p>DÉMOLITION</p>
-                <p> <%= @articles.last.created_at.strftime("publié en %B, %Y") %></p>
+                <p> <%= @articles.second.created_at.strftime("publié en %B, %Y") %></p>
               </div>
-              <h3 class="h h3"><%= @articles.last.titre %></h3>
+              <h3 class="h h3"><%= @articles.second.titre %></h3>
             </header>
             <main class="main">
-              <%= image_tag @articles.last.photo %>
-              <p><%= @articles.last.description %></p>
+              <%= image_tag @articles.second.photo %>
+              <p><%= @articles.second.description %></p>
               <div class="fait-par">
                 <h5>THIBAULT GUILLOU</h5>
                 <p>ADMIN</p>
@@ -176,13 +176,13 @@
               <label class="button" for="lightbox-P1">&times;</label>
               <div class="header-pdf">
                 <p>DÉMOLITION</p>
-                <p> <%= @articles.last.created_at.strftime("publié en %B, %Y") %></p>
+                <p> <%= @articles.first.created_at.strftime("publié en %B, %Y") %></p>
               </div>
-              <h3 class="h h3"><%= @articles.last.titre %></h3>
+              <h3 class="h h3"><%= @articles.first.titre %></h3>
             </header>
             <main class="main">
-              <%= image_tag @articles.last.photo %>
-              <p><%= @articles.last.description %></p>
+              <%= image_tag @articles.first.photo %>
+              <p><%= @articles.first.description %></p>
               <div class="fait-par">
                 <h5>THIBAULT GUILLOU</h5>
                 <p>ADMIN</p>

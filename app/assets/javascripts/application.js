@@ -1,4 +1,4 @@
-//= require owl.carousel
+
 //= require jquery
 //= require turbolinks
 //= require rails-ujs

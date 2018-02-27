@@ -5,9 +5,10 @@
   justify-content: space-evenly;
 }
   .carousel-inner{
-    width: 85%;
+    width: 90%;
     margin: auto;
     display: flex;
+    flex-direction: row;
     justify-content: space-evenly;
     > .item{
       transition: 500ms ease-in-out left;
