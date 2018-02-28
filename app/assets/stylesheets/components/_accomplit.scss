@@ -5,7 +5,7 @@
   .card {
     background-color: $orange;
     width: 190px;
-    height: 200px;
+    height: 250px;
     text-shadow: 0 1px 3px rgba(0,0,0,0.6);
     background-size: cover !important;
     background-position: center;
@@ -49,10 +49,11 @@
   flex-direction: column;
   justify-content: space-between;
   padding: 5vh 0;
+  margin: auto;
   p {
     width: 92%;
     margin: auto;
-    margin-bottom: 50px;
+    margin-bottom: 35px;
   }
 }
 

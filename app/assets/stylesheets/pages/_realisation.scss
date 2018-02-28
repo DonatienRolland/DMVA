@@ -43,6 +43,11 @@
       margin-bottom: -15%;
     }
   }
+    a {
+    color: black;
+    font-size: 12px;
+    margin-top: 20px;
+  }
 }
 
 .realisations{
@@ -159,7 +164,7 @@
   flex-direction: column;
   justify-content: flex-end;
   align-content: flex-start;
-  // padding: 6%;
+  padding: 6%;
   opacity: 0;
   background-color: rgba(219, 135, 78, 0.75);
   p{
