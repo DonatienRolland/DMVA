@@ -21,9 +21,12 @@ $(document).ready(function() {
       if (next.next().length>0) {
         next.next().children(':first-child').clone().appendTo($(this));
       }
+
+      // if (next.next().next().length > 0) {
+      //   next.next().next().children(':first-child').clone().appendTo($(this));
+      // }
       else {
         $(this).siblings(':first').children(':first-child').clone().appendTo($(this));
       }
     });
 });
-

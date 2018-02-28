@@ -140,6 +140,10 @@
 }
 
 .parc_materiel-carousel{
+  .multi-item-carousel{
+    width: 100%;
+    margin: auto;
+  }
   .item{
     background-size: cover;
     background-position: center;
@@ -260,18 +264,16 @@
 
 .materiel-item {
   height: 100%;
-
   background-size: cover;
   background-position: center;
 }
 
 @media all and (min-width: 1200px){
   .materiel-item{
-    width: 29%;
+    width: 21%;
     margin: 0 2%;
   }
 }
-
 
 
 
