@@ -36,14 +36,42 @@
     <img src="/assets/DMVA - logo blanc-02.png">
     <div class="infrastructures-text">
       <p>Découvrez l'ensemble de nos infrastructures</p>
-      <a href="/assets/Bulldozer.mp4" target="_blank">Voir la vidéo ></a>
+      <!-- <a href="/assets/Bulldozer.mp4" target="_blank" onclick="revealVideo('video','youtube')">Voir la vidéo >></a> -->
+      <button id="playme" onclick="revealVideo('video','youtube')"><p>Voir la vidéo</p></button>
     </div>
+        <div id="video" class="lightbox" onclick="hideVideo('video','youtube')">
+          <div class="lightbox-container">
+            <div class="lightbox-content">
+
+              <button onclick="hideVideo('video','youtube')" class="lightbox-close">
+                Close | ✕
+              </button>
+              <div class="video-container">
+                <iframe id="youtube" width="960" height="540" src="https://www.youtube.com/embed/WsptdUFthWI?showinfo=0" frameborder="0" allowfullscreen></iframe>
+              </div>
+
+            </div>
+          </div>
+        </div>
   </div>
+
+
+  <!-- hover vidéo -->
+
+
+
+
+
+
+
+
+
+
 
     <div class="infrastructures-xs hidden-lg hidden-md" style="background-image:linear-gradient(-225deg, rgba(89, 92, 93, 0.75) 0%, rgba(40, 42, 44, 0.75) 95%), url('/assets/Tracteur_profil');">
         <div class="infrastructures-text">
           <p>Découvrez l'ensemble de nos infrastructures</p>
-          <a href="/assets/Bulldozer.mp4" target="_blank">Voir la vidéo ></a>
+          <a href="http://localhost;3000/assets/Bulldozer.mp4" target="_blank">Voir la vidéo ></a>
         </div>
     </div>
 
