@@ -17,7 +17,6 @@
 
 .nospartenaires {
   margin: 3% auto;
-  width: 70%;
   img {
     height: 60px;
   }
@@ -28,20 +27,18 @@
   }
 }
 .carousel-client {
-  display: flex;
-  margin: 4%;
+  margin: 3% 13%;
 
   .client {
     position: relative;
-    padding: 1%;
-    width: 40%;
+    padding: 4%;
+    margin: 3% 1%;
     border: solid 1px $light-gray;
-    margin: auto;
     h4 {
-      font-size: 15px;
+      font-size: 15px !important;
     }
     p {
-      font-size: 11px;
+      font-size: 11px !important;
     }
     i {
       position: absolute;
@@ -56,6 +53,11 @@
 
     p {
       margin: 0;
+    }
+  }
+  @media (min-width: 768px){
+    .col-sm-6 {
+        width: 48%;
     }
   }
 }
