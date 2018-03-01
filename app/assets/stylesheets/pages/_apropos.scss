@@ -29,15 +29,16 @@
     height: 60%;
   }
   .infrastructures-text{
-    font-weight: bold;
     width: 30%;
   }
   p{
     font-size: 1.5em;
     color: white;
+    font-weight: bold;
   }
   a{
-    color: black;
+    color: #DB874E;
+    text-shadow: 1px 1px 2px black;
   }
 }
 
@@ -50,22 +51,26 @@
   display: flex;
   align-items: center;
   .infrastructures-text{
-    font-weight: bold;
     width: 100%;
   }
   p{
     font-size: 1.2em;
     color: white;
+    font-weight: bold;
   }
   a{
-    color: black;
+    color: #DB874E;
+    text-shadow: 1px 1px 2px black;
   }
 }
 
 .lequipe{
   margin: 5% 0;
   h2{
-    margin-bottom: 10%;
+    margin-bottom: 2%;
+  }
+  p{
+    margin-bottom: 8%;
   }
 }
 
