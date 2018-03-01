@@ -1,45 +1,48 @@
-.row {
-  padding: 10% 0;
-  width: 90%;
-  margin: auto;
-  .card {
-    background-color: $orange;
-    width: 190px;
-    height: 250px;
-    text-shadow: 0 1px 3px rgba(0,0,0,0.6);
-    background-size: cover !important;
-    background-position: center;
-    position: relative;
+.accomplit-home {
+  .row {
+    padding: 10% 0;
+    width: 90%;
     margin: auto;
-    margin-top: 4vh;
+    .card {
+      background-color: $orange;
+      width: 190px;
+      height: 250px;
+      text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+      background-size: cover !important;
+      background-position: center;
+      position: relative;
+      margin: auto;
+      margin-top: 4vh;
+    }
+    .margin-left-titre {
+      margin-left: 3%;
+    }
+    .size-titre {
+      width: 75vw;
+      margin-left: -10%;
+      text-align: center;
+    }
   }
-  .margin-left-titre {
-    margin-left: 3%;
+  .size-h3 {
+    font-size: 90px !important;
+    color: black !important ;
+    margin: 0 !important;
   }
-  .size-titre {
-    width: 75vw;
-    margin-left: -10%;
-    text-align: center;
-  }
-}
-.size-h3 {
-  font-size: 90px !important;
-  color: black !important ;
-  margin: 0 !important;
-}
 
-.card-description {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  bottom: 10px;
-  left: 10px;
-  display: flex;
-  flex-direction: column;
-  h5{
-    font-size: 20px !important;
-    color: black;
+  .card-description {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    bottom: 10px;
+    left: 10px;
+    display: flex;
+    flex-direction: column;
+    h5{
+      font-size: 20px !important;
+      color: black;
+    }
   }
+
 }
 
 
