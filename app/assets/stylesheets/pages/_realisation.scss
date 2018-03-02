@@ -231,8 +231,11 @@
         .hover-effect{
           padding: 2%;
           opacity: 1;
-          .objet-plus{
+          p{
             visibility: hidden;
+          }
+          .realisations-img-titre{
+            visibility: visible;
           }
         }
       }
