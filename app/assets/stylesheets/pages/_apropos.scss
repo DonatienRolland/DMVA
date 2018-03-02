@@ -65,7 +65,7 @@
 }
 
 .lequipe{
-  margin: 5% 0;
+  margin: 10% 0;
   h2{
     margin-bottom: 2%;
   }
@@ -214,8 +214,11 @@
 
   #playme {
     p {
-      color: black;
-
+      color: #DB874E;
+      font-weight: normal;
+    }
+    p:hover{
+      text-decoration: underline;
     }
     background: none;
     // text-transform: uppercase;
