@@ -154,9 +154,6 @@
   .hover-effect:hover{
     opacity: 1;
   }
-.col-xs-4 {
-  padding: 0;
-}
 }
 
 
@@ -249,6 +246,8 @@
   }
 }
 
+//// Carousel part
+
 @media all and (max-width: 1100px){
   .parc_materiel-carousel{
     div{
@@ -257,10 +256,11 @@
     .hover-effect{
       opacity: 1;
     }
+    .col-xs-12 {
+      padding: 0;
+    }
   }
 }
-//// Carousel part
-
 
 .materiel-item {
   height: 100%;
@@ -270,12 +270,51 @@
 
 @media all and (min-width: 1200px){
   .materiel-item{
-    width: 21%;
-    margin: 0 2%;
+    width: 23%;
+    margin: 0 1%;
   }
 }
 
 
+.parc_materiel-carousel{
+  .multi-item-carousel-4{
+    margin: auto;
+    .carousel-inner{
+      width: 90%;
+      margin: auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      > .item{
+        transition: 500ms ease-in-out left;
+      }
+      .active{
+        &.left{
+          left:-25%;
+        }
+        &.right{
+          left:25%;
+        }
+      }
+      .next{
+        left: 25%;
+      }
+      .prev{
+        left: -25%;
+      }
+      @media all and (transform-3d), (-webkit-transform-3d) {
+        > .item{
+          // use your favourite prefixer here
+          transition: 500ms ease-in-out left;
+          transition: 500ms ease-in-out all;
+          backface-visibility: visible;
+          transform: none!important;
+        }
+      }
+    }
+  }
+
+}
 
 
 
