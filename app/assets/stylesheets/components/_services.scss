@@ -1,9 +1,14 @@
 .services-home {
   padding: 0 6%;
-  margin-top: 20px;
+  padding-top: 20px;
   h2{
     margin-left: -6%;
+    margin-top: 0px;
   }
+.row {
+  width: 100%;
+  padding: 0;
+}
   // position: relative;
 }
 .service {
@@ -46,10 +51,6 @@
   img{
     margin: 0;
   }
-}
-.row {
-  width: 100%;
-  padding: 0;
 }
 
 .service-maconnerie{

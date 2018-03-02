@@ -1,65 +1,76 @@
-.row {
-  padding: 10% 0;
-  width: 90%;
-  margin: auto;
-  .card {
-    background-color: $orange;
-    width: 190px;
-    height: 200px;
-    text-shadow: 0 1px 3px rgba(0,0,0,0.6);
-    background-size: cover !important;
-    background-position: center;
-    position: relative;
-    margin: auto;
-    margin-top: 4vh;
+.accomplit-home {
+  .accomplit {
+    height: 230px;
+    margin-left: 2%;
+    margin-top: 2%;
+    .card {
+      height: 100%;
+      background-color: $orange;
+      text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+      background-size: cover !important;
+      background-position: center;
+      position: relative;
+    }
+    .margin-left-titre {
+      margin-left: 3%;
+    }
   }
-  .margin-left-titre {
-    margin-left: 3%;
+  .size-h3 {
+    font-size: 90px !important;
+    color: black !important ;
+    margin: 0 !important;
   }
-  .size-titre {
-    width: 75vw;
-    margin-left: -10%;
-    text-align: center;
-  }
-}
-.size-h3 {
-  font-size: 90px !important;
-  color: black !important ;
-  margin: 0 !important;
-}
 
-.card-description {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  bottom: 10px;
-  left: 10px;
-  display: flex;
-  flex-direction: column;
-  h5{
-    font-size: 20px !important;
-    color: black;
+  .card-description {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    bottom: 10px;
+    left: 10px;
+    display: flex;
+    flex-direction: column;
+    h5{
+      font-size: 20px !important;
+      color: black;
+    }
   }
+@media all and (max-width: 992px) {
+    .accomplit {
+      align-item: center;
+      height: 100%;
+      margin: 0;
+      .card {
+        height: 190px;
+        width: 240px;
+        margin-top: 20px;
+      }
+      .text-center {
+        text-align: center;
+      }
+      .chiffres-accomplit {
+        h4{
+          text-align: center;
+        }
+      }
+    }
+
+  }
+
+
 }
 
 
 .desc-bloc-accompli {
-  width: 75%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 5vh 0;
-  p {
-    width: 92%;
-    margin: auto;
-    margin-bottom: 50px;
-  }
 }
 
 .chiffres-accomplit {
-  text-align: center;
   h2 {
     color: $orange;
+    margin-bottom: 0;
   }
 }
 

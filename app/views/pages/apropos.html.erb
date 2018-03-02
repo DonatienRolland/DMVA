@@ -11,7 +11,7 @@
         <hr class="separation sep-horizontal" />
         <h4 class="souligne">L'entreprise</h4>
         <span class="more">
-          Située dans l'oise, DMVA est une entreprise de travaux publics spécialisée dans les travaux de voirie, d'assainissement, de terrassement, de réseaux secs, d'eau potable, de maçonnerie industrielle et de démolition.
+          DMVA est une entreprise de Travaux publics créée en 2003, et opérant dans toute la région de Picardie. DMVA est spécialisée dans 7 domaines : les travaux de voirie, l'assainissement, le terrassement, les réseaux secs, l'eau potable, la maçonnerie industrielle et la démolition. Ensemble nous améliorons notre cadre de vie. Aujourd'hui ils sont 15 à œuvrer à l'aménagement des territoires et à la construction d'infrastructures permettant d'améliorer le cadre de vie des habitants.
         </span>
       </div>
       <img src="/assets/Travail_sur_chantier.jpg" alt="" class="col-xs-12 col-sm-6 picture-service">
@@ -24,7 +24,7 @@
         <hr class="separation sep-centrale" />
         <h4>Nos habilitations</h4>
         <span class="more">
-        Nam sole orto magnitudine angusti gurgitis sed profundi a transitu arcebantur et dum piscatorios quaerunt lenunculos vel innare temere contextis cratibus parant.
+        DMVA est habilitée selon le référentiel de management UIC (Union des Industries Chimiques), nous intervenons régulièrement sur des sites chimiques classés en seuil haut (SEVESO 2). Cette habilitation que nous détenons depuis (date) a été renouvelée jusqu'au (date). Nous sommes habilités par un grand nombre de syndicats d'eau et d'assainissement pour intervenir sur leurs réseaux (raccordement tout-à-l'égout, raccordement eau potable).
         </span>
       </div>
     </div>
@@ -36,14 +36,42 @@
     <img src="/assets/DMVA - logo blanc-02.png">
     <div class="infrastructures-text">
       <p>Découvrez l'ensemble de nos infrastructures</p>
-      <a href="/assets/Bulldozer.mp4" target="_blank">Voir la vidéo ></a>
+      <!-- <a href="/assets/Bulldozer.mp4" target="_blank" onclick="revealVideo('video','youtube')">Voir la vidéo >></a> -->
+      <button id="playme" onclick="revealVideo('video','youtube')"><p>Voir la vidéo</p></button>
     </div>
+        <div id="video" class="lightbox" onclick="hideVideo('video','youtube')">
+          <div class="lightbox-container">
+            <div class="lightbox-content">
+
+              <button onclick="hideVideo('video','youtube')" class="lightbox-close">
+                Close | ✕
+              </button>
+              <div class="video-container">
+                <iframe id="youtube" width="960" height="540" src="https://www.youtube.com/embed/WsptdUFthWI?showinfo=0" frameborder="0" allowfullscreen></iframe>
+              </div>
+
+            </div>
+          </div>
+        </div>
   </div>
+
+
+  <!-- hover vidéo -->
+
+
+
+
+
+
+
+
+
+
 
     <div class="infrastructures-xs hidden-lg hidden-md" style="background-image:linear-gradient(-225deg, rgba(89, 92, 93, 0.75) 0%, rgba(40, 42, 44, 0.75) 95%), url('/assets/Tracteur_profil');">
         <div class="infrastructures-text">
           <p>Découvrez l'ensemble de nos infrastructures</p>
-          <a href="/assets/Bulldozer.mp4" target="_blank">Voir la vidéo ></a>
+          <a href="http://localhost;3000/assets/Bulldozer.mp4" target="_blank">Voir la vidéo ></a>
         </div>
     </div>
 
@@ -52,6 +80,7 @@
 
     <div class="lequipe">
       <h2>Notre Equipe</h2>
+      <p>En plus de notre équipe de 15 salariés, chaque année, nous accueillons stagiaires et jeunes en contrat d'apprentissage, qui viennent consolider avec nous leurs formations.</p>
 
 
         <%= render 'shared/team' %>
