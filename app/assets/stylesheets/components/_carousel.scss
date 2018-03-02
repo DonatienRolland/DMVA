@@ -1,12 +1,12 @@
 .lequipe .multi-item-carousel{
-  width: 80%;
+  width: 85%;
   margin: auto;
   .carousel-inner{
-    width: 90%;
+    width: 85%;
     margin: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    // display: flex;
+    // flex-direction: row;
+    // justify-content: space-evenly;
     > .item{
       transition: 500ms ease-in-out left;
     }
