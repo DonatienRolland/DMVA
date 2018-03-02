@@ -17,6 +17,7 @@
 
 .nospartenaires {
   margin: 3% auto;
+  width: 80vw;
   img {
     height: 60px;
   }
@@ -34,6 +35,7 @@
     padding: 4%;
     margin: 3% 1%;
     border: solid 1px $light-gray;
+    height: 25vh;
     h4 {
       font-size: 15px !important;
     }
@@ -58,6 +60,11 @@
   @media (min-width: 768px){
     .col-sm-6 {
         width: 48%;
+    }
+  }
+  @media (max-width: 768px){
+    .client{
+      height: auto;
     }
   }
 }
