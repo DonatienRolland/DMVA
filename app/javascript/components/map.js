@@ -1,6 +1,6 @@
-const accomplit = document.getElementById("map");
+const map = document.getElementById("map");
 
-if (accomplit) {
+if (map) {
   $(document).ready(function() {
     console.log("coucou")
     var uluru = {lat: 49.291137, lng: 2.509433};
