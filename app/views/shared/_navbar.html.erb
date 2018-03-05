@@ -2,11 +2,11 @@
   <!-- Logo -->
   <% if user_signed_in? %>
     <%= link_to admin_dashboard_path do %>
-      <%= cl_image_tag "DMVA---logo-transparent_ei3lvs", :height=>50 %>
+      <img src="/assets/DMVA.png" alt="" style="height: 50px">
     <% end %>
   <% else %>
     <%= link_to root_path do %>
-      <%= cl_image_tag "DMVA---logo-transparent_ei3lvs", :height=>50 %>
+      <img src="/assets/DMVA.png" alt="" style="height: 50px">
     <% end %>
   <% end %>
 

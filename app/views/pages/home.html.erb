@@ -1,10 +1,11 @@
 
 
-  <div class="banner" style="background-image:linear-gradient(-225deg, rgba(89, 92, 93, 0.30) 0%, rgba(40, 42, 44, 0.40) 50%), url('<%= cl_image_path 'luke-besley-260249_wnqa7m' %>');">
+  <div class="banner" style="background-image:linear-gradient(-225deg, rgba(89, 92, 93, 0.30) 0%, rgba(40, 42, 44, 0.40) 50%), url('/assets/banner');">
     <div class="banner-content">
       <h1><strong>DMVA</strong><br> Travaux Publics</h1>
-      <p class="hidden-xs">Située dans l'<strong>oise</strong> , DMVA est une entreprise de <strong>travaux publics</strong> spécialisée dans les travaux de <strong>voirie</strong>, d'<strong>assainissement</strong>, de <strong>terrassement</strong>, de <strong>réseaux secs</strong>, d'eau potable, de <strong>maçonnerie industrielle</strong> et de <strong>démolition</strong>.</p>
-      <a href="/#actions" class="btn btn-primary btn-lg">EN SAVOIR +</a>
+      <p class="hidden-xs">Située dans l'<strong>oise</strong>, DMVA est une entreprise de <strong>travaux publics</strong> spécialisée dans les travaux de <strong>voirie</strong>, d'<strong>assainissement</strong>, de <strong>terrassement</strong>, de <strong>réseaux secs</strong>, d'eau potable, de <strong>maçonnerie industrielle</strong> et de <strong>démolition</strong>.</p>
+      <p class="hidden-lg hidden-md">Spécialiste dans les travaux de voirie, d'assainissement, de terrassement et de maçonnerie industrielle</p>
+      <a href="/#actions" class="btn btn-primary btn-lg margin-top-btn">EN SAVOIR +</a>
     </div>
   </div>
 
@@ -76,7 +77,7 @@
   <div id="services" class=" services-home">
     <h2>Nos Services</h2>
     <div class="service row inverse-flex">
-      <img src="/assets/construction.jpg" alt="" class="col-xs-12 col-sm-6 picture-service">
+      <img src="/assets/road-construction.jpg" alt="" class="col-xs-12 col-sm-6 picture-service">
       <div class="description-service col-xs-12 col-sm-6">
         <h4>Assainissement</h4>
         <span class="more">
@@ -101,12 +102,12 @@
           Ainsi nous intervenons aussi bien sur voie publique et privée et maîtrisons de multiples techniques telles que l'enrochement, le pavage, le terrassement, l'enrobé à chaud ou encore le béton lavé.
         </span>
       </div>
-      <img src="/assets/construction.jpg" alt="" class="col-xs-12 col-sm-6 picture-service">
+      <img src="/assets/voirie.png" alt="" class="col-xs-12 col-sm-6 picture-service">
     </div>
 
 
     <div class="service row inverse-flex service-maconnerie">
-      <img src="/assets/construction.jpg" alt="" class="col-xs-12 col-sm-6 picture-service padding-right-img">
+      <img src="/assets/construction-worker-569149_1920.jpg" alt="" class="col-xs-12 col-sm-6 picture-service padding-right-img">
       <div class="description-service padding-right-des col-xs-12 col-sm-6">
         <hr class="separation sep-centrale" />
         <h4>Maçonnerie</h4>
@@ -191,7 +192,7 @@
 
   </div>
 
-  <div class="travaillons-ensemble">
+  <div class="travaillons-ensemble marge-top-sanscarsouel">
     <p>Vous souhaitez faire appel à nous ?</p>
     <p><strong>Alors <%= link_to 'travaillons-ensemble', new_contact_path %></strong></p>
   </div>
