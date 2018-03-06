@@ -203,15 +203,6 @@
     }
   }
 }
-//// parc materiel
-@media all and (max-width: 720px){
-  .parc_materiel-titre{
-    margin: 10% 0 10px 5%;
-  }
-  .parc_materiel{
-    margin-top: 35% !important;
-  }
-}
 
 .parc_materiel{
   margin-bottom: 5%;
@@ -355,6 +346,12 @@
       }
     }
   }
+  .parc_materiel-titre{
+    margin: 10% 0 10px 5%;
+  }
+  .parc_materiel{
+    margin-top: 35% !important;
+  }
 }
 
 //// Carousel part
@@ -392,7 +389,7 @@
     margin: auto;
     .carousel-inner{
       width: 90%;
-      margin: auto;
+      margin-left: 4%;
       // display: flex;
       // flex-direction: row;
       // justify-content: space-evenly;
