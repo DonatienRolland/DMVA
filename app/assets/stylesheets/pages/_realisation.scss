@@ -3,19 +3,9 @@
   margin-bottom: 5%;
   height: 30vh;
   display: flex;
-  justify-content: space-evenly;
-  hr {
-    width: 5px;
-    top: 0;
-    left: -46%;
-    height: 100px;
-    clear: both;
-    margin-top: 10px;
-    border-radius: 1px;
-    background-color: #DB874E;
-    margin: 10px;
-  }
+  justify-content: space-between;
   .references-text{
+    margin-left: 5%;
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -25,6 +15,7 @@
     }
   }
   .references-img{
+    margin-right: 6%;
     position: relative;
     width: 13%;
     height: 30vh;
