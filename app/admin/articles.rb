@@ -23,7 +23,6 @@ ActiveAdmin.register Article do
     column :titre
     column :genre
     column :category
-    column :photo
     column :created_at
     actions
   end
