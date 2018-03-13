@@ -9,8 +9,14 @@
   margin-bottom: 0px;
   border: none;
   min-height: 70px;
+  position: relative;
 }
-
+// admin
+.top-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
 /* Logo */
 .navbar-brand img {
   height: 50px;

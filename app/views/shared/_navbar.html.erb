@@ -1,13 +1,10 @@
 <div class="navbar">
   <!-- Logo -->
   <% if user_signed_in? %>
-    <%= link_to admin_dashboard_path do %>
-      <img src="/assets/DMVA.png" alt="" style="height: 50px">
-    <% end %>
-  <% else %>
-    <%= link_to root_path do %>
-      <img src="/assets/DMVA.png" alt="" style="height: 50px">
-    <% end %>
+    <%= link_to 'A', admin_dashboard_path, class:"btn btn-primary btn-lg margin-top-btn top-left" %>
+  <% end %>
+  <%= link_to root_path do %>
+    <img src="/assets/DMVA.png" alt="" style="height: 50px">
   <% end %>
 
   <!-- Right Navigation -->
@@ -46,6 +43,5 @@
     </div>
   </div>
 
-
-    <%= link_to 'DEMANDER UN DEVIS', new_contact_path, :class => "demande-devis hidden-xs" %>
+  <div id="myBtn" class="demande-devis hidden-xs">DEMANDER UN DEVIS</div>
 </div>
