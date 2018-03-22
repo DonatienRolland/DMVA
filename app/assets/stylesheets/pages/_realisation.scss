@@ -82,12 +82,16 @@
         p{
           color: white;
         }
-        .objet-plus{
-          margin-top: -35px;
-          font-size: 5em;
-          font-weight: normal;
-          align-self: flex-end;
+        .en-tete-hover-effect{
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-start;
           flex-grow: 1;
+          .objet-plus{
+            margin-top: -35px;
+            font-size: 5em;
+            font-weight: normal;
+          }
         }
         .realisations-img-titre{
           font-weight: bold;
