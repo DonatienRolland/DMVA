@@ -129,6 +129,9 @@
   right: 0;
   left: 0;
   opacity: 1;
+  .titre-item-v{
+    color: white !important;
+  }
 }
 // responsive form
 
@@ -226,7 +229,7 @@
   .header{
     padding-bottom: 10px;
     .header-pdf p{
-      color: #C8C7C8 !important;
+      color: $gray !important;
     }
   }
 
@@ -238,7 +241,7 @@
     justify-content: space-around;
     align-items: center;
     p{
-    color: #C8C7C8 !important;
+    color: $gray !important;
     }
     .fait-par {
       align-self: flex-end;
