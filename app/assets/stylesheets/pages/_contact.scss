@@ -1,10 +1,118 @@
+.moyen-contact {
+  padding: 0 4%;
+  margin-top: 5%;
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  .form-contact {
+    width:70%;
+    #new_contact{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin: 34px 0 2% 0;
+    }
+    .small-width-input {
+      width: 48%;
+    }
+    .small-width-input:first-of-type{
+      margin-right: 4%;
+    }
+    .lastchild{
+      margin-left: 4%;
+    }
+    .large-width-input {
+      width: 100%
+    }
+  }
+  .form-horizontal {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+
+  .width-contact-form {
+    width: 45%;
+    font-size: 13px;
+  }
+  hr {
+    margin-left: 10%;
+    margin-top: 8%;
+    width: 2px;
+    height: 125px;
+    border-radius: 1px;
+    background-color: $light-gray;
+  }
+  .contact-dmva {
+    width: 17%;
+    display: flex;
+    flex-direction: column;
+    .info-contact {
+      margin-top: 15%;
+      text-align: right;
+      a{
+      color: #C8C7C8;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 991px){
+  .moyen-contact{
+    flex-direction: column-reverse;
+    .form-contact{
+      width: 90%;
+      margin-top: 10%;
+      h3{
+        text-align: left;
+      }
+    }
+    .contact-dmva{
+      width: 90%;
+      .infos-dmva{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        .info-contact{
+          margin: 5% 2% 0 2%;
+          text-align: left;
+        }
+      }
+    }
+  }
+}
+
+.titre-contact-form {
+  display: flex;
+  justify-content: left;
+  hr {
+    margin-left: 2%;
+    margin-top: 4%;
+    width: 100px;
+    height: 5px;
+    border-radius: 1px;
+    background-color: $orange;
+  }
+}
+
+
+
+
 #map {
-    width: 100%;
-    height: 400px;
+  margin-top: 5%;
+  width: 100%;
+  height: 200px;
+  margin-bottom: -4%;
   }
 
 
 .hidden { display: none; }
+
+
+
+
+
 
 
 /*flash*/
@@ -36,3 +144,4 @@ border-color: #d6e9c6;
 color: #468847;
 text-align: left;
 }
+

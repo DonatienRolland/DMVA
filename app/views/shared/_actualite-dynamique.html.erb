@@ -1,0 +1,305 @@
+<div class="paragraphe-actualite">
+  <p>Chaque jour nous oeuvrons à la construction et à l'entretien des routes et de toute autre forme d'infrastructures de transport et d'aménagements urbains, dans le but d’aménager et de faciliter le quotidien de chacun.</p>
+<!--     <%= link_to 'Tout afficher', root_path %>
+    <%= link_to 'Démolition', root_path %>
+    <%= link_to 'Maçonnerie', root_path %>
+    <%= link_to 'Voirie', root_path %>
+    <%= link_to 'Assainissement', root_path %> -->
+</div>
+
+<div class="projets hidden-xs hidden-sm ">
+  <!-- article type document -->
+  <div class="item-a-1 margin-item">
+    <%= image_tag @articles.last.photo, class:"article-image width-image-50" %>
+    <div class="description-article">
+      <div class="carateristique">
+        <p>DÉMOLITION</p>
+        <img src="assets/file.png" alt="" style="height:20px">
+      </div>
+      <div class="titre-et-date">
+        <h4><%= @articles.last.titre %></h4>
+        <p> <%= @articles.last.created_at.strftime("publié en %B, %Y") %></p>
+      </div>
+      <div class="fait-par">
+        <h5>THIBAULT GUILLOU</h5>
+        <p>ADMIN</p>
+      </div>
+    </div>
+
+
+
+    <label class="hero opacity-hover-video button" for="lightbox-1"></label>
+      <aside class="lightbox">
+        <input type="checkbox" class="state" id="lightbox-1" />
+        <article class="content">
+          <header class="header">
+            <label class="button" for="lightbox-1">&times;</label>
+            <div class="header-pdf">
+              <p>DÉMOLITION</p>
+              <p> <%= @articles.last.created_at.strftime("publié en %B, %Y") %></p>
+            </div>
+            <h3 class="h h3"><%= @articles.last.titre %></h3>
+          </header>
+          <main class="main">
+            <%= image_tag @articles.last.photo %>
+            <p><%= @articles.last.description %></p>
+            <div class="fait-par">
+              <h5>THIBAULT GUILLOU</h5>
+              <p>ADMIN</p>
+            </div>
+          </main>
+          <footer class="footer-pdf">
+            <label class="button btn btn-primary" for="lightbox-1">Fermer</label>
+          </footer>
+        </article>
+        <label class="backdrop" for="lightbox-1"></label>
+      </aside>
+  </div>
+
+  <div class="item-a-2  margin-item">
+    <div class="description-article">
+      <div class="carateristique">
+        <p>DÉMOLITION</p>
+        <img src="assets/file.png" alt="" style="height:20px">
+      </div>
+      <div class="titre-et-date">
+        <h4><%= @articles.first.titre %></h4>
+        <p> <%= @articles.first.created_at.strftime("publié en %B, %Y") %></p>
+      </div>
+      <div class="fait-par">
+        <h5>THIBAULT GUILLOU</h5>
+        <p>ADMIN</p>
+      </div>
+    </div>
+    <%= image_tag @articles.first.photo, class:"width-image-100 height-image-50" %>
+
+
+    <label class="hero opacity-hover-video button" for="lightbox-2"></label>
+      <aside class="lightbox">
+        <input type="checkbox" class="state" id="lightbox-2" />
+        <article class="content">
+          <header class="header">
+            <label class="button" for="lightbox-2">&times;</label>
+            <div class="header-pdf">
+              <p>DÉMOLITION</p>
+              <p> <%= @articles.first.created_at.strftime("publié en %B, %Y") %></p>
+            </div>
+            <h3 class="h h3"><%= @articles.first.titre %></h3>
+          </header>
+          <main class="main">
+            <%= image_tag @articles.first.photo %>
+            <p><%= @articles.first.description %></p>
+            <div class="fait-par">
+              <h5>THIBAULT GUILLOU</h5>
+              <p>ADMIN</p>
+            </div>
+          </main>
+          <footer class="footer-pdf">
+            <label class="button btn btn-primary" for="lightbox-2">Fermer</label>
+          </footer>
+        </article>
+        <label class="backdrop" for="lightbox-2"></label>
+      </aside>
+  </div>
+
+  <div class="item-a-3  margin-item">
+    <%= image_tag @articles.second.photo, class:"article-image width-image-50" %>
+    <div class="description-article">
+      <div class="carateristique">
+        <p>DÉMOLITION</p>
+        <img src="assets/file.png" alt="" style="height:20px">
+      </div>
+      <div class="titre-et-date">
+        <h4><%= @articles.second.titre %></h4>
+        <p> <%= @articles.second.created_at.strftime("publié en %B, %Y") %></p>
+      </div>
+      <div class="fait-par">
+        <h5>THIBAULT GUILLOU</h5>
+        <p>ADMIN</p>
+      </div>
+
+      <label class="hero opacity-hover-video button" for="lightbox-3"></label>
+        <aside class="lightbox">
+          <input type="checkbox" class="state" id="lightbox-3" />
+          <article class="content">
+            <header class="header">
+              <label class="button" for="lightbox-3">&times;</label>
+              <div class="header-pdf">
+                <p>DÉMOLITION</p>
+                <p> <%= @articles.second.created_at.strftime("publié en %B, %Y") %></p>
+              </div>
+              <h3 class="h h3"><%= @articles.second.titre %></h3>
+            </header>
+            <main class="main">
+              <%= image_tag @articles.second.photo %>
+              <p><%= @articles.second.description %></p>
+              <div class="fait-par">
+                <h5>THIBAULT GUILLOU</h5>
+                <p>ADMIN</p>
+              </div>
+            </main>
+            <footer class="footer-pdf">
+              <label class="button btn btn-primary" for="lightbox-3">Fermer</label>
+            </footer>
+          </article>
+          <label class="backdrop" for="lightbox-3"></label>
+        </aside>
+    </div>
+  </div>
+
+
+
+
+  <!-- article type photo -->
+
+
+  <div class="item-p-1  margin-item" style="background-image: url('<%= cl_image_path @articles.first.photo %>');">
+    <label class="hero opacity-hover-video button" for="lightbox-P1">
+      <div class="item-description">
+        <div class="carateristique">
+          <p class="titre-item-v">DÉMOLITION</p>
+          <img src="assets/white_file.png" alt="" style="height:20px">
+        </div>
+        <div class="titre-et-date">
+          <h4><%= @articles.first.titre %></h4>
+          <p> <%= @articles.first.created_at.strftime("publié en %B, %Y") %></p>
+        </div>
+        <div class="fait-par">
+          <h5>THIBAULT GUILLOU</h5>
+          <p>ADMIN</p>
+        </div>
+      </div>
+    </label>
+        <aside class="lightbox">
+          <input type="checkbox" class="state" id="lightbox-P1" />
+          <article class="content">
+            <header class="header">
+              <label class="button" for="lightbox-P1">&times;</label>
+              <div class="header-pdf">
+                <p>DÉMOLITION</p>
+                <p> <%= @articles.first.created_at.strftime("publié en %B, %Y") %></p>
+              </div>
+              <h3 class="h h3"><%= @articles.first.titre %></h3>
+            </header>
+            <main class="main">
+              <%= image_tag @articles.first.photo %>
+              <p><%= @articles.first.description %></p>
+              <div class="fait-par">
+                <h5>THIBAULT GUILLOU</h5>
+                <p>ADMIN</p>
+              </div>
+            </main>
+            <footer class="footer-pdf">
+              <label class="button btn btn-primary" for="lightbox-P1">Fermer</label>
+            </footer>
+          </article>
+          <label class="backdrop" for="lightbox-P1"></label>
+        </aside>
+  </div>
+
+
+  <!-- article type video -->
+  <div class="item-v-1  margin-item" style="background-image: url('<%= cl_image_path @articles.first.photo %>');">
+  <label class="hero opacity-hover-video button" for="lightbox-V1">
+    <div class="item-description">
+      <div class="carateristique">
+        <p class="titre-item-v">DÉMOLITION</p>
+        <img src="assets/white_file.png" alt="" style="height:20px">
+      </div>
+      <div class="titre-et-date">
+        <h4><%= @articles.first.titre %></h4>
+        <p> <%= @articles.first.created_at.strftime("publié en %B, %Y") %></p>
+      </div>
+      <div class="fait-par">
+        <h5>THIBAULT GUILLOU</h5>
+        <p>ADMIN</p>
+      </div>
+    </div>
+  </label>
+    <aside class="lightbox">
+      <input type="checkbox" class="state" id="lightbox-V1" />
+      <article class="content">
+        <header class="header">
+          <label class="button" for="lightbox-V1">&times;</label>
+          <div class="header-pdf">
+            <p>DÉMOLITION</p>
+            <p> <%= @articles.first.created_at.strftime("publié en %B, %Y") %></p>
+          </div>
+          <h3 class="h h3"><%= @articles.first.titre %></h3>
+        </header>
+        <main class="main">
+          <%= image_tag @articles.first.photo %>
+          <p><%= @articles.first.description %></p>
+          <div class="fait-par">
+            <h5>THIBAULT GUILLOU</h5>
+            <p>ADMIN</p>
+          </div>
+        </main>
+        <footer class="footer-pdf">
+          <label class="button btn btn-primary" for="lightbox-V1">Fermer</label>
+        </footer>
+      </article>
+      <label class="backdrop" for="lightbox-V1"></label>
+    </aside>
+  </div>
+
+
+</div>
+
+
+<div class="hidden-lg hidden-md">
+  <div class="row">
+  <% @articles.each do |article|   %>
+    <div class="col-xs-12 col-sm-12">
+      <div class="item-r margin-item">
+        <div class="picture-responsive-artcile" style="background-image: url('<%= cl_image_path article.photo %>');">
+        </div>
+        <div class="description-article">
+          <div class="carateristique">
+            <p>DÉMOLITION</p>
+            <img src="assets/file.png" alt="" style="height:20px">
+          </div>
+          <div class="titre-et-date">
+            <h4><%= article.titre %></h4>
+            <p> <%= article.created_at.strftime("publié en %B, %Y") %></p>
+          </div>
+          <div class="fait-par">
+            <h5>THIBAULT GUILLOU</h5>
+            <p>ADMIN</p>
+          </div>
+        </div>
+    <label class="hero opacity-hover-video button" for="lightbox-Responsive"></label>
+      <aside class="lightbox">
+        <input type="checkbox" class="state" id="lightbox-Responsive" />
+        <article class="content">
+          <header class="header">
+            <label class="button exit-top" for="lightbox-Responsive">&times;</label>
+            <div class="header-pdf">
+              <p>DÉMOLITION</p>
+              <p> <%= article.created_at.strftime("publié en %B, %Y") %></p>
+            </div>
+            <h3 class="h h3"><%= article.titre %></h3>
+          </header>
+          <main class="main">
+            <%= image_tag article.photo %>
+            <p><%= article.description %></p>
+            <div class="fait-par">
+              <h5>THIBAULT GUILLOU</h5>
+              <p>ADMIN</p>
+            </div>
+          </main>
+          <footer class="footer-pdf">
+            <label class="button btn btn-primary" for="lightbox-Responsive">Fermer</label>
+          </footer>
+        </article>
+        <label class="backdrop" for="lightbox-Responsive"></label>
+      </aside>
+      </div>
+    </div>
+  <% end %>
+
+  </div>
+</div>
+
+<p class="en-savoir-plus-actu">Voir la suite</p>
+

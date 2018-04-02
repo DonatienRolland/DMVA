@@ -1,6 +1,95 @@
-
-<div class="banner-apropos" style="background-image:linear-gradient(-225deg, rgba(89, 92, 93, 0.15) 0%, rgba(40, 42, 44, 0.28) 50%), url('/assets/entree_dmva.JPG');">
-
+<%= render 'shared/modal' %>
+<div class="banner-apropos" style="background-image:linear-gradient(-225deg, rgba(89, 92, 93, 0.15) 0%, rgba(40, 42, 44, 0.28) 50%), url('/assets/Tracteur_profil');">
     <h1>À Propos</h1>
+</div>
 
+<div class="container-home">
+
+  <div id="habilitation" class="services-home">
+    <div class="service row">
+      <div class="description-service padding-left-des col-xs-12 col-sm-6">
+        <hr class="separation sep-horizontal" />
+        <h4 class="souligne">L'entreprise</h4>
+        <span class="more">
+          DMVA est une entreprise de Travaux publics créée en 2003, et opérant dans toute la région de Picardie. DMVA est spécialisée dans 7 domaines : les travaux de voirie, l'assainissement, le terrassement, les réseaux secs, l'eau potable, la maçonnerie industrielle et la démolition. Ensemble nous améliorons notre cadre de vie. Aujourd'hui ils sont 15 à œuvrer à l'aménagement des territoires et à la construction d'infrastructures permettant d'améliorer le cadre de vie des habitants.
+        </span>
+      </div>
+      <img src="/assets/entreprise.jpg" alt="" class="col-xs-12 col-sm-6 picture-service">
+    </div>
+
+
+    <div class="service row inverse-flex">
+      <img src="/assets/Ouvrier_a_genoux" alt="" class="col-xs-12 col-sm-6 picture-service padding-right-img">
+      <div class="description-service padding-right-des col-xs-12 col-sm-6">
+        <hr class="separation sep-centrale" />
+        <h4>Nos habilitations</h4>
+        <span class="more">
+        DMVA est habilitée selon le référentiel de management UIC (Union des Industries Chimiques), nous intervenons régulièrement sur des sites chimiques classés en seuil haut (SEVESO 2). Cette habilitation que nous détenons depuis (date) a été renouvelée jusqu'au (date). Nous sommes habilités par un grand nombre de syndicats d'eau et d'assainissement pour intervenir sur leurs réseaux (raccordement tout-à-l'égout, raccordement eau potable).
+        </span>
+      </div>
+    </div>
+
+  </div>
+
+
+  <div id="infrastructure" class="infrastructures hidden-xs hidden-sm" style="background-image:linear-gradient(-225deg, rgba(89, 92, 93, 0.75) 0%, rgba(40, 42, 44, 0.75) 95%), url('/assets/Tracteur_profil');">
+    <img src="/assets/DMVA - logo blanc-02.png">
+    <div class="infrastructures-text">
+      <p>Découvrez l'ensemble de nos infrastructures</p>
+      <!-- <a href="/assets/Bulldozer.mp4" target="_blank" onclick="revealVideo('video','youtube')">Voir la vidéo >></a> -->
+      <button id="playme" onclick="revealVideo('video','youtube')"><p>Voir la vidéo</p></button>
+    </div>
+        <div id="video" class="lightbox" onclick="hideVideo('video','youtube')">
+          <div class="lightbox-container">
+            <div class="lightbox-content">
+
+              <button onclick="hideVideo('video','youtube')" class="lightbox-close">
+                Close | ✕
+              </button>
+              <div class="video-container">
+                <iframe id="youtube" width="960" height="540" src="https://www.youtube.com/embed/WsptdUFthWI?showinfo=0" frameborder="0" allowfullscreen></iframe>
+              </div>
+
+            </div>
+          </div>
+        </div>
+  </div>
+
+
+  <!-- hover vidéo -->
+
+
+
+
+
+
+
+
+
+
+
+    <div class="infrastructures-xs hidden-lg hidden-md" style="background-image:linear-gradient(-225deg, rgba(89, 92, 93, 0.75) 0%, rgba(40, 42, 44, 0.75) 95%), url('/assets/Tracteur_profil');">
+        <div class="infrastructures-text">
+          <p>Découvrez l'ensemble de nos infrastructures</p>
+          <a href="http://localhost;3000/assets/Bulldozer.mp4" target="_blank">Voir la vidéo ></a>
+        </div>
+    </div>
+
+
+
+
+    <div class="lequipe">
+      <h2>Notre Equipe</h2>
+      <p>En plus de notre équipe de 15 salariés, chaque année, nous accueillons stagiaires et jeunes en contrat d'apprentissage, qui viennent consolider avec nous leurs formations.</p>
+
+
+        <%= render 'shared/team' %>
+
+
+    </div>
+
+  <div class="travaillons-ensemble">
+    <p>Vous souhaitez faire appel à nous ?</p>
+    <p><strong>Alors <%= link_to 'travaillons-ensemble', new_contact_path %></strong></p>
+  </div>
 </div>

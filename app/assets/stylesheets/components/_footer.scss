@@ -1,34 +1,73 @@
 .footer {
-  margin-top: 20px;
+  padding: 4% 5% 1% 5%;
   width: 100%;
+  margin-top: 4%;
   background-color: #2a2a2a;
-  // background: #F4F4F4;
   display: flex;
   align-items: center;
   justify-content: space-between;
   color: $orange;
   flex-direction: column;
-  justify-content: space-between;
+  a {
+    color: $light-gray;
+    text-decoration: none;
+  }
+  a:hover {
+    color: $orange;
+  }
+  h4 {
+    color: white;
+  }
 }
+.footer-adresse {
+  margin: 7% 0;
+  p {
+    margin: 0;
+  }
+}
+.link-page {
+  margin-top: 12%;
+  p {
+    margin: 0;
+  }
+}
+.telephone-footer {
+  margin: 7% 0;
+  p {
+    margin: 0;
+  }
+}
+.titre-top-footer {
+  hr {
+    height: 5px;
+    margin: 0;
+    width: 62%;
+  }
+}
+
 .footer-links {
   display: flex;
   align-items: center;
+  padding: 0;
 }
 .footer-links a {
-  color: black;
-  opacity: 0.15;
+  color: #DB874E;
+  opacity: 1;
   text-decoration: none;
   font-size: 24px;
   padding: 0px 10px;
 }
 .footer-links a:hover {
-  opacity: 1;
+  opacity: 0.5;
 }
 .footer .fa-heart {
   color: #D23333;
 }
 .footer-bas {
   width: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 11px;
 }
 .footer-contact {
   display: flex;
@@ -37,4 +76,22 @@
 }
 .footer-content {
   width: 100%;
+  flex: 0 0 37vh;
+
+}
+.back-up{
+  text-align: right;
+  font-size: 11px;
+  padding-right: 9%;
+  a {
+    color: $orange;
+  }
+}
+
+
+.footer-copyright{
+  font-size: 11px;
+  a {
+    color: $orange;
+  }
 }

@@ -1,0 +1,60 @@
+.lequipe .multi-item-carousel{
+  width: 85%;
+  margin: auto;
+  .carousel-inner{
+    width: 85%;
+    margin: auto;
+    // display: flex;
+    // flex-direction: row;
+    // justify-content: space-evenly;
+    > .item{
+      transition: 500ms ease-in-out left;
+    }
+    .active{
+      &.left{
+        left:-33%;
+      }
+      &.right{
+        left:33%;
+      }
+    }
+    .next{
+      left: 33%;
+    }
+    .prev{
+      left: -33%;
+    }
+    @media all and (transform-3d), (-webkit-transform-3d) {
+      > .item{
+        // use your favourite prefixer here
+        transition: 500ms ease-in-out left;
+        transition: 500ms ease-in-out all;
+        backface-visibility: visible;
+        transform: none!important;
+      }
+    }
+  }
+}
+  .carousel-control{
+    background-color: none;
+    // Position the arrows near the card borders
+    width: 7%;
+    &.left{
+      background-image: none !important;
+      background-color: none;
+    }
+    &.right{
+      background-image: none !important;
+      background-color: none;
+    }
+  }
+    .carousel-indicators {
+      bottom: -60px;
+      li{
+        border: 1px solid #DB874E;
+      }
+      .active{
+        background-color: #DB874E;
+      }
+    }
+

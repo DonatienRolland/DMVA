@@ -20,17 +20,16 @@ $headers-font: "Montserrat", "Helvetica", "sans-serif";
 
 p {
   font-weight: light;
-  font-size: 13px !important;
-  color: #C8C7C8;
+  font-size: 13px;
+  color: #817A7A;
 }
 h1 {
-  font-size: 30px !important;
+  font-size: 30px;
   font-weight: bold !important;
 }
 
 h2 {
   font-size: 30px !important;
-  // font-weight: bold !important;
   font-weight: 500;
 }
 h3 {
@@ -39,8 +38,7 @@ h3 {
   line-height: 1.09;
 }
 h4 {
-  font-size: 15px !important;
-  font-weight: bold !important;
+  font-size: 18px !important;
 }
 h5 {
   font-size: 10px !important;
@@ -48,4 +46,8 @@ h5 {
 h6 {
   font-size: 5px !important;
 }
-
+span {
+  font-weight: light;
+  font-size: 13px;
+  color: #817A7A;
+}

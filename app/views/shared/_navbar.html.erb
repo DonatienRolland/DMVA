@@ -1,7 +1,10 @@
 <div class="navbar">
   <!-- Logo -->
+  <% if user_signed_in? %>
+    <%= link_to 'A', admin_dashboard_path, class:"btn btn-primary btn-lg margin-top-btn top-left" %>
+  <% end %>
   <%= link_to root_path do %>
-    <%= cl_image_tag "DMVA---logo-transparent_ei3lvs", :height=>50 %>
+    <img src="/assets/DMVA.png" alt="" style="height: 50px">
   <% end %>
 
   <!-- Right Navigation -->
@@ -11,10 +14,10 @@
       <%= link_to 'ACCUEIL', root_path, :class => "navbar-item navbar-link" %>
       <%= link_to 'A PROPOS', apropos_path, :class => "navbar-item navbar-link" %>
       <%= link_to 'REALISATIONS', realisations_path, :class => "navbar-item navbar-link" %>
-      <%= link_to 'CONTACT', contacts_path, :class => "navbar-item navbar-link" %>
+      <%= link_to 'CONTACT', new_contact_path, :class => "navbar-item navbar-link" %>
 
     </div>
-    <div class="contact">
+    <div class="contact-navbar">
       <a href="tel:+33344665102" class="navbar-item font-contact"><i class="fa fa-phone" aria-hidden="true"></i> 03 44 66 51 02</a>
       <div class="dropdown">
         <a href="" data-toggle="dropdown" class="navbar-item font-contact"><i class="fa fa-clock-o" aria-hidden="true"></i> 08:00 - 17:00</a>
@@ -32,14 +35,13 @@
     <div class="dropdown">
       <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
       <ul class="dropdown-menu dropdown-menu-right navbar-dropdown-menu">
-        <li><a href="#">Accueil</a></li>
-        <li><a href="#">Realisations</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">Actualité</a></li>
+        <li><%= link_to 'Acceuil', root_path %></li>
+        <li><%= link_to 'A Propos', apropos_path %></li>
+        <li><%= link_to 'Réalisations', realisations_path %></li>
+        <li><%= link_to 'Contact', new_contact_path %></li>
       </ul>
     </div>
   </div>
 
-    <a href="" class="demande-devis">DEMANDER UN DEVIS</a>
-
+  <div id="myBtn" class="demande-devis hidden-xs">DEMANDER UN DEVIS</div>
 </div>

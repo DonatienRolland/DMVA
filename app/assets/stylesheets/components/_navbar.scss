@@ -5,10 +5,18 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 8%;
+  padding: 0 5%;
   margin-bottom: 0px;
+  border: none;
+  min-height: 70px;
+  position: relative;
 }
-
+// admin
+.top-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
 /* Logo */
 .navbar-brand img {
   height: 50px;
@@ -102,6 +110,7 @@
   a {
   position: relative;
   text-decoration: none;
+  font-size: 1vw;
   }
   a:hover {
   color: $orange;
@@ -128,9 +137,13 @@
 }
 
 
-
-
-
+.contact-navbar {
+  display: flex;
+  align-items: center;
+  a {
+    font-size: 1vw;
+  }
+}
 
 
 

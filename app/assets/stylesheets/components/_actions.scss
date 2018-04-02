@@ -1,31 +1,33 @@
+#actions {
+  position: relative;
+  padding-top: 50px;
+  margin-bottom: 60px;
+  display: flex;
+
 .action {
+  margin-bottom: 40px;
   display: flex;
   flex-direction: column;
-  justify-content:center;
+  justify-content: center;
   h3 {
     margin-top: 0;
+    margin-bottom: 0;
     font-size: 19px !important;
     font-weight: 600 !important;
   }
-  margin-top: 50px;
-  margin-bottom: 20px;
   p {
     color: $light-gray !important;
+    font-weight: normal;
   }
 }
 
+}
 .icon-position {
   display: flex;
   flex-direction: row;
   align-items: center;
   margin-right: 20px;
   justify-content: center;
-  h2{
-    color: $light-gray !important;
-  }
-}
-.actions {
-  padding: 30px;
 }
 .text-action {
   display: flex;
@@ -52,5 +54,19 @@
   margin-left: 12px;
   p{
     margin: 0;
+  }
+}
+
+.separation-actions{
+  position: absolute;
+  bottom: 0px;
+  right: 10%;
+  left: 10%;
+  hr{
+    height: 1px;
+    background-color: $light-gray;
+    // width: 80vw;
+    margin: 0;
+    border-top: none;
   }
 }

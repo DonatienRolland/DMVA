@@ -1,11 +1,15 @@
 // Specific CSS for your home-page
 .container-body {
-  padding: 0px 3%;
+  padding: 0px 3% 3% 3%;
   background-color: white;
 }
 .morecontent span {
     display: none;
 }
 .morelink {
-    display: block;
+  display: block;
+}
+
+.container-home {
+  margin: 0 5%;
 }

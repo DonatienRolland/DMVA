@@ -27,9 +27,21 @@ gem 'carrierwave', '~> 0.11.2'
 
 gem "geocoder"
 
-gem 'mail_form'
 
-gem "simple_form"
+# gem 'rails_12factor', group: :production
+# download images from asset to heroku
+
+
+
+gem 'devise'
+
+
+gem 'activeadmin'
+
+gem 'mail_form', '~> 1.5', '>= 1.5.1'
+# gem 'sendgrid-ruby'
+# makes navigating your web application faste
+
 
 gem "coffee-rails"
 gem "gmaps4rails"
@@ -37,8 +49,6 @@ gem "gmaps4rails"
 source 'https://rails-assets.org' do
   gem "rails-assets-underscore"
 end
-
-
 
 group :development, :test do
   gem 'pry-byebug'

@@ -1,63 +1,65 @@
 .banner {
   color: white;
-  height: calc(100vh - 137px);
+  height: 85vh;
   text-align: center;
   background-size: cover;
   background-position: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
+  padding: 2% 8%;
 }
 .banner h1 {
-  font-weight: bold;
   text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
-  margin-bottom: 0;
-  margin-top: 0;
+  margin: 0;
+  strong {
+    font-size: 60px;
+  }
 }
 .banner p {
-  font-size: 25px;
+  font-size: 19px;
   font-weight: lighter;
-  color: rgb(255, 255, 255);
-  opacity: 0.6;
+  color: white;
+  opacity: 0.8;
   margin-bottom: 30px;
   margin-top: 30px;
 }
 
 .btn-primary {
-  background-color: $brown;
+  background-color: $orange;
   border: none;
 }
+.btn-primary:hover {
+  background-color: $orange;
+  text-decoration: underline;
+}
+.btn {
+  font-size: 15px;
+}
+
 .banner-content {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  height: 100%;
+  width: 70%;
   justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 70px;
-  right: 100px;
-  text-align: -webkit-right;
+  align-items: left;
+  text-align: left;
+  margin-bottom: 20px;
+  p strong{
+    font-weight: normal;
+  }
 }
 
 .images-banner{
-  height: calc(100vh - 137px);
+  height: 85vh;
   border: none;
   .carousel {
     height: 100%;
   }
 }
-.banner {
-  .carousel-inner{
-    height: 100%;
-  }
-  .carousel {
-    border: none;
-  }
-  .item {
-    object-fit: cover;
+
+@media all and (max-width: 992px)  {
+  .margin-top-btn {
+    margin-top: 10%;
   }
 }
-
 
 

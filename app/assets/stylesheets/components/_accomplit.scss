@@ -1,77 +1,92 @@
-.accomplit {
-  width: 90%;
-  margin: auto;
-  .card {
-    background-color: #db874e;
-    width: 204px;
-    height: 250px;
-    text-shadow: 0 1px 3px rgba(0,0,0,0.6);
-    background-size: cover !important;
-    background-position: center;
-    position: relative;
-    h3 {
-      text-align: left;
-      font-size: 85px !important;
-      font-weight: 500 !important;
-      letter-spacing: -1px;
-      margin: 0;
+.accomplit-home {
+  .accomplit {
+    height: 230px;
+    margin-left: 2%;
+    margin-top: 2%;
+    .card {
+      height: 100%;
+      background-color: $orange;
+      text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+      background-size: cover !important;
+      background-position: center;
+      position: relative;
     }
-    h5 {
-      font-size: 17px !important;
-      font-weight: 400 !important;
-      margin-top: 0;
+    .margin-left-titre {
+      margin-left: 3%;
     }
   }
+  .card-description {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    bottom: 10px;
+    left: 10px;
+    display: flex;
+    flex-direction: column;
+    h5{
+      font-size: 20px !important;
+      color: black;
+    }
+  }
+@media all and (max-width: 992px) {
+    .accomplit {
+      align-item: center;
+      height: 100%;
+      margin: 0;
+      .card {
+        height: 190px;
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+      }
+      .text-center {
+        text-align: center;
+      }
+      .chiffres-accomplit {
+        h4{
+          text-align: center;
+        }
+      }
+    }
+
+  }
+}
+.size-h3 {
+  font-size: 90px !important;
+  color: black !important ;
+  margin: 0 !important;
 }
 
-.card-description {
-  position: absolute;
-  bottom: 10px;
-  left: 10px;
-  display: flex;
-  flex-direction: column;
-}
 
-
-.bloc-accompli {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
 .desc-bloc-accompli {
-  width: 65%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  p {
+    width: 82%
+  }
+
 }
 
 .chiffres-accomplit {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   h2 {
     color: $orange;
+    margin-bottom: 0;
   }
+  text-align: center;
 }
 
 
 
-
-
-
-
-
-#owl-demo .item{
-  margin: 3px;
+.counter-value {
+  color: $orange;
+  font-family: $headers-font;
+  font-weight: 500;
+  line-height: 1.1;
+  margin-top: 25px;
+  font-size: 30px;
 }
-#owl-demo .item img{
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
 
 
 

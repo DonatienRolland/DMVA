@@ -1,0 +1,22 @@
+
+.brochure {
+  margin: 10% -9% 10% -9%;
+  padding: 0 5%;
+  height: 20vh;
+  background-size: cover;
+  background-position: top;
+  display: flex;
+  align-items: center;
+  .brochure-text{
+    width: 100%;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  h3{
+    font-size: 2em;
+    color: white;
+    width: 65%;
+  }
+}

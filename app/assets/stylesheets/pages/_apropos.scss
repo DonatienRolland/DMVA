@@ -1,17 +1,254 @@
 .banner-apropos {
   color: white;
   height: 30vh;
-  text-align: center;
   background-size: cover;
   background-position: center;
   display: flex;
   align-items: flex-end;
-  justify-content: flex-start;
   h1 {
     display: flex;
-    width: 40%;
+    margin-left: 10%;
     height: 50%;
     align-items: center;
     justify-content: space-around;
+    font-size: 40px;
   }
 }
+
+
+.infrastructures {
+  margin: 10% -9% 10% -9%;
+  padding: 0 5%;
+  height: 20vh;
+  background-size: cover;
+  background-position: top;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  img{
+    height: 60%;
+  }
+  .infrastructures-text{
+    width: 30%;
+  }
+  p{
+    font-size: 1.5em;
+    color: white;
+    font-weight: bold;
+  }
+  a{
+    color: #DB874E;
+    text-shadow: 1px 1px 2px black;
+  }
+}
+
+.infrastructures-xs {
+  margin: 10% -9% 10% -9%;
+  padding: 0 20%;
+  height: 20vh;
+  background-size: cover;
+  background-position: top;
+  display: flex;
+  align-items: center;
+  .infrastructures-text{
+    width: 100%;
+  }
+  p{
+    font-size: 1.2em;
+    color: white;
+    font-weight: bold;
+  }
+  a{
+    color: #DB874E;
+    text-shadow: 1px 1px 2px black;
+  }
+}
+
+.lequipe{
+  margin: 10% 0;
+  h2{
+    margin-bottom: 2%;
+  }
+  p{
+    margin-bottom: 8%;
+  }
+}
+
+.member{
+  background-color: #c8c7c8;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  .portrait_membre{
+    width: 100%;
+    height: 210px;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 25px;
+  }
+  p{
+    width: 90%;
+    color: black;
+    text-align: center;
+  }
+  .member-description{
+    font-size: 15px;
+    color: white;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 3%;
+    display: flex;
+    align-items: center;
+    background-color: #DB874E;
+    opacity: 0;
+  }
+  .member-description:hover{
+    opacity: 0.75;
+  }
+  .member-contact{
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0 10% 0;
+    a{
+      width: 15%;
+      img{
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 899px){
+  #my-slider{
+    div{
+      height: 50vh;
+    }
+    .portrait_membre{
+      height: 25vh;
+    }
+    .member-description{
+      opacity: 0;
+    }
+    .col-xs-12 {
+      padding: 0;
+    }
+  }
+}
+
+
+
+@media all and (min-width: 900px){
+  .member{
+    width: 29%;
+    margin: 0 2%;
+  }
+}
+
+
+// lien vidéo
+.infrastructures {
+  .lightbox {
+    background-color: fade(black, 80%);
+    overflow: scroll;
+    position: fixed;
+    display: none;
+    z-index: 1;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+
+    &-container {
+      position: relative;
+      max-width: 960px;
+      margin: 7% auto;
+      display: block;
+      padding: 0 3%;
+      height: auto;
+      z-index: 10;
+
+      // Increasing top margin for mobile
+      @media screen and (max-width: 768px) { margin-top: 10%; }
+      @media screen and (max-width: 414px) { margin-top: 13%; }
+    }
+
+    &-content {
+      box-shadow: 0 1px 6px fade(black, 70%);
+    }
+
+    &-close {
+      text-transform: uppercase;
+      background: transparent;
+      position: absolute;
+      font-weight: 300;
+      font-size: 12px;
+      display: block;
+      border: none;
+      color: white;
+      top: -22px;
+      right: 3%;
+    }
+  }
+
+  .video-container {
+      padding-bottom: 56.25%;
+      position: relative;
+      padding-top: 30px;
+      overflow: hidden;
+      height: 0;
+  }
+
+  .video-container iframe,
+  .video-container object,
+  .video-container embed {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      left: 0;
+      top: 0;
+  }
+
+  /* IGNORE FORM THIS POINT ON */
+
+  body {
+    background: #efefef;
+  }
+
+  #playme {
+    p {
+      color: #DB874E;
+      font-weight: normal;
+      margin: 0;
+    }
+    p:hover{
+      text-decoration: underline;
+    }
+    background: none;
+    // text-transform: uppercase;
+    border: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 0;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
