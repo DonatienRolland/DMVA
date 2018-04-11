@@ -1,3 +1,7 @@
-<%= @contact.name %> <<%= @contact.email %>> wrote:
-
+Vous avez été contacté via la plateforme dmva-tp.fr pour:
+<%= @contact.objet %>
+--------
 <%= @contact.message %>
+
+<%= @contact.name %>
+<%= @contact.phone %> / <<%= @contact.email %>>
