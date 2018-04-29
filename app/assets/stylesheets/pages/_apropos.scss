@@ -33,11 +33,11 @@
   }
   p{
     font-size: 1.5em;
-    color: white;
+    color: white !important;
     font-weight: bold;
   }
   a{
-    color: #DB874E;
+    color: #DB874E !important;
     text-shadow: 1px 1px 2px black;
   }
 }
@@ -55,11 +55,11 @@
   }
   p{
     font-size: 1.2em;
-    color: white;
+    color: white !important;
     font-weight: bold;
   }
   a{
-    color: #DB874E;
+    color: #DB874E !important;
     text-shadow: 1px 1px 2px black;
   }
 }
@@ -96,7 +96,7 @@
   }
   .member-description{
     font-size: 15px;
-    color: white;
+    color: white !important;
     width: 100%;
     height: 100%;
     text-align: center;
@@ -220,7 +220,7 @@
 
   #playme {
     p {
-      color: #DB874E;
+      color: #DB874E !important;
       font-weight: normal;
       margin: 0;
     }
