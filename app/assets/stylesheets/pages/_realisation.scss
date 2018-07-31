@@ -13,6 +13,10 @@
       margin-top: 0;
       margin-bottom: 8%;
     }
+    p{
+      margin-left: 2%;
+      padding-left: 15px;
+    }
   }
   .references-img{
     margin-right: 6%;
@@ -79,14 +83,14 @@
         padding: 4%;
         // opacity: 0;
         background-color: rgba(0, 0, 0, 0.5);
-        p{
-          color: white;
-        }
         .en-tete-hover-effect{
           display: flex;
           justify-content: space-between;
           align-items: flex-start;
           flex-grow: 1;
+          p{
+            color: white !important;
+          }
           .objet-plus{
             margin-top: -35px;
             font-size: 5em;
@@ -96,6 +100,10 @@
         .realisations-img-titre{
           font-weight: bold;
           font-size: 1.1em;
+          color: white !important;
+        }
+        .realisations-img-text{
+          color: white !important;
         }
       }
       .hover-effect:hover{
@@ -205,6 +213,7 @@
   display: flex;
   flex-direction: column;
 }
+
 .parc_materiel-titre{
   margin-bottom: 5%;
   display: flex;
@@ -369,6 +378,11 @@
   height: 100%;
   background-size: cover;
   background-position: center;
+  .hover-effect{
+    .type-vehicle{
+      color: white !important;
+    }
+  }
 }
 
 @media all and (min-width: 900px){
