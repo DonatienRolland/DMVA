@@ -1,5 +1,5 @@
 <%= render 'shared/modal' %>
-  <div class="banner" style="background-image:linear-gradient(-225deg, rgba(89, 92, 93, 0.30) 0%, rgba(40, 42, 44, 0.40) 50%), url('/assets/banner');">
+  <div class="banner" style="background-image:linear-gradient(-225deg, rgba(89, 92, 93, 0.30) 0%, rgba(40, 42, 44, 0.40) 50%), url('<%= cl_image_path 'banner_sa20em' %>');">
     <div class="banner-content">
       <h1><strong>DMVA</strong><br> Travaux Publics</h1>
       <p class="hidden-xs">Située dans l'<strong>oise</strong>, DMVA est une entreprise de <strong>travaux publics</strong> spécialisée dans les travaux de <strong>voirie</strong>, d'<strong>assainissement</strong>, de <strong>terrassement</strong>, de <strong>réseaux secs</strong>, d'eau potable, de <strong>maçonnerie industrielle</strong> et de <strong>démolition</strong>.</p>
@@ -75,7 +75,7 @@
   <div id="services" class=" services-home">
     <h2>Nos Services</h2>
     <div class="service row inverse-flex">
-      <%= image_tag 'road-construction', class:"col-xs-12 col-sm-6 picture-service" %>
+      <%= cl_image_tag 'workers-535533_1920_conxuq', class:"col-xs-12 col-sm-6 picture-service" %>
       <div class="description-service col-xs-12 col-sm-6">
         <h4>Assainissement</h4>
         <span class="more">
@@ -100,12 +100,12 @@
           Ainsi nous intervenons aussi bien sur voie publique et privée et maîtrisons de multiples techniques telles que l'enrochement, le pavage, le terrassement, l'enrobé à chaud ou encore le béton lavé.
         </span>
       </div>
-      <%= image_tag 'voirie', class:"col-xs-12 col-sm-6 picture-service" %>
+      <%= cl_image_tag 'voirie2_k4tjuc', class:"col-xs-12 col-sm-6 picture-service" %>
     </div>
 
 
     <div class="service row inverse-flex service-maconnerie">
-      <%= image_tag 'construction-worker-569149_1920', class:"col-xs-12 col-sm-6 picture-service padding-right-img" %>
+      <%= cl_image_tag 'construction-worker-569149_1920_pt3v69', class:"col-xs-12 col-sm-6 picture-service padding-right-img" %>
       <div class="description-service padding-right-des col-xs-12 col-sm-6">
         <hr class="separation sep-centrale" />
         <h4>Maçonnerie</h4>
